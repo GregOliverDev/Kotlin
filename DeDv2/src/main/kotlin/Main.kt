@@ -24,7 +24,12 @@ fun main() {
 
         when (controller) {
             1 -> {
-                val playerMenu = PlayerMenu()
+                val playerMenu = PlayerMenu(
+                    nameProvider = {
+                        print("Digite o nome do jogador: ")
+                        readln()
+                    }
+                )
                 players.add(playerMenu.createPlayerMenu(players.size + 1))
             }
 
