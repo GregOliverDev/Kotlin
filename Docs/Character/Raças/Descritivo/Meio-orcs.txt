@@ -1,0 +1,30 @@
+Aqui está uma descrição detalhada da raça **Meio-Orc** na 5ª edição de Dungeons & Dragons (D&D).
+
+### **Meio-Orcs**
+Meio-orcs são o resultado da união entre orcs e humanos, muitas vezes nascidos em circunstâncias difíceis ou em territórios onde essas duas raças convivem. Eles combinam a força e a ferocidade dos orcs com a adaptabilidade e a tenacidade dos humanos. Meio-orcs são conhecidos por sua resiliência física e sua capacidade de sobreviver a condições extremas, além de sua habilidade em combate.
+
+- **Tamanho:** Médio
+- **Deslocamento:** 30 pés
+- **Visão no Escuro:** Meio-orcs podem ver em condições de pouca luz a até 60 pés como se fosse luz do dia, e na escuridão total como se fosse luz fraca.
+- **Ameaça Intimidante:** Você ganha proficiência na perícia Intimidação, refletindo a presença imponente e ameaçadora dos meio-orcs.
+- **Resistência Implacável:** Quando você é reduzido a 0 pontos de vida, mas não é morto instantaneamente, você pode cair para 1 ponto de vida em vez disso. Você só pode usar essa habilidade uma vez por descanso longo.
+- **Ataque Selvagem:** Quando você obtém um acerto crítico com uma arma corpo a corpo, você pode rolar um dos dados de dano da arma uma vez adicional e adicionar o resultado ao dano adicional do acerto crítico.
+- **Idiomas:** Você pode falar, ler e escrever Comum e Orc.
+
+### **Características Gerais**
+- **Bônus de Atributo:** +2 em Força e +1 em Constituição, refletindo a força bruta e a durabilidade dos meio-orcs.
+- **Fúria Orc:** A habilidade "Resistência Implacável" e o "Ataque Selvagem" tornam os meio-orcs ferozes combatentes, capazes de suportar danos e devolver golpes devastadores.
+  
+### **Personalidade e Cultura**
+Meio-orcs frequentemente enfrentam preconceito e discriminação, tanto de humanos quanto de orcs. Isso pode fazer com que eles desenvolvam uma personalidade resiliente, independente e muitas vezes sombria. No entanto, eles também podem ser leais companheiros e guerreiros dedicados, especialmente se encontrarem aceitação em uma comunidade ou grupo de aventureiros.
+
+### **Religião**
+Meio-orcs podem venerar deuses de guerra, força e poder, especialmente aqueles reverenciados por orcs, ou podem adotar os deuses dos humanos, dependendo de onde cresceram e em que cultura foram criados.
+
+### **Habilidades e Versatilidade**
+A combinação de força física e habilidades de combate faz dos meio-orcs excelentes guerreiros, bárbaros e paladinos. Eles se destacam em combate corpo a corpo e têm uma presença intimidante no campo de batalha.
+
+### **Relações com Outras Raças**
+Devido à sua herança orc, meio-orcs podem enfrentar desconfiança de outras raças, mas aqueles que superam essas barreiras podem ser reconhecidos por sua coragem e lealdade. Sua força e determinação os tornam valiosos em situações perigosas e difíceis.
+
+Essa combinação de força, resistência e habilidades únicas de combate faz dos meio-orcs uma escolha atraente para jogadores que desejam interpretar um personagem forte, resiliente e com uma presença marcante no combate.

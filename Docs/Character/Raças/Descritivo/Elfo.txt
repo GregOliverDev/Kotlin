@@ -1,0 +1,37 @@
+**Elfos
+Os elfos são uma raça elegante e de longa vida, conhecida por sua beleza, agilidade e habilidades naturais em magia. Vivem em sintonia com a natureza e possuem uma longa história que remonta a tempos antigos. Sua cultura é rica e eles valorizam a sabedoria, a arte e a magia.
+
+Tamanho: Médio
+Deslocamento: 30 pés
+Visão no Escuro: Elfos têm uma visão no escuro de 60 pés devido à sua adaptação à vida em ambientes pouco iluminados.
+Resistência a Encantamentos: Elfos têm vantagem em testes de resistência contra encantamentos e magia que tenta encantá-los.
+Transe: Elfos meditam por 4 horas por dia para descansar, em vez de dormir. Esse transe é equivalente a 8 horas de sono para outras raças.
+Idiomas: Você pode falar, ler e escrever Comum e Élfico.
+
+**Alto Elfo
+Bônus de Atributo: +2 em Destreza e +1 em Inteligência.
+Cantrip Mágica: Você conhece um cantrip da lista de magias de mago. Inteligência é a sua habilidade de conjuração para essa magia.
+Perícias Adicionais: Você é proficiente em Percepção e pode escolher uma perícia adicional para a qual é proficiente.
+Visão no Escuro: Como os outros elfos, você tem visão no escuro de 60 pés.
+Resistência a Encantamentos: Você tem vantagem em testes de resistência contra encantamentos e magia que tenta encantá-lo.
+
+Elfo da Floresta
+Bônus de Atributo: +2 em Destreza e +1 em Sabedoria.
+Habilidades de Furtividade: Você é proficiente em Furtividade, e sua agilidade natural melhora suas habilidades de se esconder.
+Perícias Adicionais: Você é proficiente em Percepção e Furtividade.
+Visão no Escuro: Como os outros elfos, você tem visão no escuro de 60 pés.
+Resistência a Encantamentos: Você tem vantagem em testes de resistência contra encantamentos e magia que tenta encantá-lo.
+
+Drow (Elfo das Trevas)
+Bônus de Atributo: +2 em Destreza e +1 em Carisma.
+Visão no Escuro Superior: Drows têm visão no escuro de 120 pés e podem ver na escuridão mágica como se fosse luz fraca.
+Resistência a Encantamentos: Você tem vantagem em testes de resistência contra encantamentos e magia que tenta encantá-lo.
+Habilidades Mágicas: Você conhece os truques de "Dança das Sombras" e "Luz" e pode lançar as magias de "Escuridão" e "Presa de Aranha" com seus slots de magias de nível 1 (esses feitiços podem ser usados uma vez por descanso longo).
+Furtividade Superior: Você tem vantagem em testes de Furtividade quando está em escuridão ou penumbra.
+
+Elfo da Lua
+Bônus de Atributo: +2 em Destreza e +1 em Carisma.
+Habilidades de Magia: Você conhece um cantrip da lista de magias de mago. Carisma é a sua habilidade de conjuração para essa magia.
+Perícias Adicionais: Você é proficiente em Percepção e pode escolher uma perícia adicional para a qual é proficiente.
+Visão no Escuro: Como os outros elfos, você tem visão no escuro de 60 pés.
+Resistência a Encantamentos: Você tem vantagem em testes de resistência contra encantamentos e magia que tenta encantá-lo.

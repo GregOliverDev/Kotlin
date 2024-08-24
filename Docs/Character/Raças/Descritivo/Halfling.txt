@@ -1,0 +1,39 @@
+Aqui está uma descrição completa da raça **Halfling** na 5ª edição de Dungeons & Dragons (D&D), incluindo as sub-raças **Halfling Pés-Leves** e **Halfling Robusto**.
+
+### **Halflings**
+Os halflings são uma raça pequena, ágil e otimista, conhecida por seu espírito aventureiro e natureza alegre. Eles valorizam a simplicidade, a família e a comunidade, mas também possuem uma curiosidade inata que os leva a explorar o mundo além de suas vilas pacíficas.
+
+- **Tamanho:** Pequeno
+- **Deslocamento:** 25 pés
+- **Sorte:** Quando você rola um 1 em uma jogada de ataque, teste de habilidade ou teste de resistência, você pode rerrolar o dado e deve usar o novo resultado.
+- **Bravura:** Você tem vantagem em testes de resistência contra ser amedrontado.
+- **Ágil e Discreto:** Você pode se mover através do espaço de qualquer criatura que seja de uma categoria de tamanho maior que a sua.
+- **Idiomas:** Você pode falar, ler e escrever Comum e Halfling.
+
+#### **Halfling Pés-Leves**
+- **Bônus de Atributo:** +2 em Destreza e +1 em Carisma.
+- **Furtividade Natural:** Você pode tentar se esconder mesmo quando estiver atrás de uma criatura de tamanho maior que o seu, utilizando a agilidade natural dos halflings para se misturar com o ambiente.
+- **Sorte:** Como todos os halflings, você pode rerrolar um dado se tirar 1 em uma jogada de ataque, teste de habilidade ou teste de resistência.
+- **Bravura:** Você tem vantagem em testes de resistência contra ser amedrontado.
+- **Deslocamento:** 25 pés, refletindo sua agilidade natural.
+
+#### **Halfling Robusto**
+- **Bônus de Atributo:** +2 em Destreza e +1 em Constituição.
+- **Resiliência Halfling:** Você tem vantagem em testes de resistência contra venenos e resistência a dano de veneno, representando a resistência física robusta dos halflings robustos.
+- **Sorte:** Como todos os halflings, você pode rerrolar um dado se tirar 1 em uma jogada de ataque, teste de habilidade ou teste de resistência.
+- **Bravura:** Você tem vantagem em testes de resistência contra ser amedrontado.
+- **Deslocamento:** 25 pés, mantendo a mobilidade típica dos halflings.
+
+### **Personalidade e Cultura**
+Halflings são conhecidos por sua natureza otimista, alegre e tranquila. Eles preferem a vida simples e pacífica, valorizando a família, os amigos e a comunidade. No entanto, muitos halflings possuem um espírito aventureiro que os leva a explorar o mundo.
+
+### **Religião**
+Os halflings veneram deuses que representam aspectos de suas vidas diárias, como Lar, Família, Agricultura e Comunidade. Suas cerimônias religiosas são simples, refletindo sua natureza prática e a importância da vida cotidiana.
+
+### **Habilidades e Versatilidade**
+Apesar de seu pequeno tamanho, os halflings são extremamente habilidosos, especialmente em situações que exigem agilidade e furtividade. Eles são mestres em evitar o perigo, graças à sua sorte inata e resistência.
+
+### **Relações com Outras Raças**
+Halflings são geralmente bem-vistos por outras raças devido à sua natureza amigável e descontraída. Eles podem se adaptar facilmente a diferentes culturas e comunidades, fazendo amigos rapidamente onde quer que vão. No entanto, eles preferem evitar conflitos e manter uma postura neutra quando possível.
+
+Essa combinação de sorte, agilidade e resistência faz dos halflings uma escolha atraente para jogadores que procuram um personagem ágil e sortudo, capaz de se esquivar do perigo e enfrentar desafios com uma atitude positiva.

@@ -1,0 +1,61 @@
+Em Dungeons & Dragons (D&D), as classes determinam o papel que um personagem desempenha no jogo, suas habilidades e como ele contribui para a equipe. Abaixo está uma lista abrangente das classes principais e suas sub-classes (ou arquétipos) disponíveis na 5ª edição de D&D:
+
+### **Classes Principais**
+
+1. **Bárbaro**
+   - **Caminho do Berserker**: Foco em atacar com fúria e resistir a danos.
+   - **Caminho do Totem**: Usa o espírito de animais para ganhar habilidades especiais.
+   - **Caminho do Ancestral**: Invoca espíritos ancestrais para obter poder.
+
+2. **Bardo**
+   - **Colégio da Lore**: Focado em habilidades de conhecimento e versatilidade.
+   - **Colégio da Valor**: Especializado em combate e inspiração para a equipe.
+   - **Colégio dos Espelhos**: Usa ilusões e encantamentos para manipular o campo de batalha.
+   - **Colégio da Criação** (do livro *Tasha’s Cauldron of Everything*): Manipula a criação e o poder do som.
+
+3. **Clérigo**
+   - **Domínio da Vida**: Foco em cura e proteção.
+   - **Domínio da Luz**: Especializa-se em magias de luz e combate contra o mal.
+   - **Domínio da Guerra**: Focado em combate e estratégia.
+   - **Domínio do Conhecimento**: Concentra-se em sabedoria e aprendizado.
+   - **Domínio da Natureza**: Ligado à natureza e ao controle das forças naturais.
+   - **Domínio dos Tempestades**: Usa o poder dos elementos para causar destruição.
+   - **Domínio da Morte** (do livro *Van Richten’s Guide to Ravenloft*): Manipula o poder da morte e dos mortos-vivos.
+
+4. **Druida**
+   - **Círculo da Terra**: Focado em magias de cura e controle do ambiente.
+   - **Círculo da Lua**: Especializado em transformar-se em formas animais e combate.
+   - **Círculo dos Espólios** (do livro *Tasha’s Cauldron of Everything*): Manipula as forças da natureza e o crescimento das plantas.
+
+5. **Guerreiro**
+   - **Campeão**: Especializa-se em combate físico e eficiência geral.
+   - **Mestre de Batalha**: Foco em táticas e habilidades de combate especializadas.
+   - **Cavaleiro**: Usa habilidades de defesa e proteção.
+   - **Guerreiro Arcano** (do livro *Sword Coast Adventurer’s Guide*): Combina combate físico e magia.
+
+6. **Ladino**
+   - **Trapaceiro**: Focado em habilidades de furtividade e engano.
+   - **Assassino**: Especializa-se em ataques furtivos e eliminação de alvos.
+   - **Ladrão**: Mestre em roubo e desarmamento de armadilhas.
+   - **Estrategista** (do livro *Tasha’s Cauldron of Everything*): Foco em táticas e habilidades versáteis.
+
+7. **Mago**
+   - **Escola da Abjuração**: Focado em proteção e resistência mágica.
+   - **Escola da Evocação**: Especializa-se em magias de dano e destruição.
+   - **Escola da Divinação**: Mestre em previsões e informações.
+   - **Escola da Ilusão**: Usa magia para criar ilusões e enganos.
+   - **Escola da Necromancia**: Manipula a vida e a morte, invocando mortos-vivos.
+   - **Escola da Transmutação**: Especializa-se em alterar a forma e a matéria.
+
+8. **Monge**
+   - **Caminho do Solar**: Focado em ataques rápidos e habilidade física.
+   - **Caminho dos Quatro Ventos**: Usa poderes de elemento para causar dano.
+   - **Caminho da Mão Aberta**: Especializa-se em combate desarmado e manipulação física.
+   - **Caminho do Drunken Master** (do livro *Xanathar’s Guide to Everything*): Combina habilidades de combate com movimentos imprevisíveis.
+
+9. **Paladino**
+   - **Juramento da Devoção**: Focado em combate, proteção e justiça.
+   - **Juramento dos Antigos**: Defende a natureza e os princípios da vida.
+   - **Juramento da Vingança**: Busca justiça implacável e combate o mal.
+   - **Juramento da Conquista** (do livro *Tasha’s Cauldron of Everything*): Busca a conquista e a supremacia.
+

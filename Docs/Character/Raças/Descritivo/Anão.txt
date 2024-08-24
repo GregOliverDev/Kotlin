@@ -1,0 +1,41 @@
+Aqui está uma descrição completa da raça **Anão** na 5ª edição de Dungeons & Dragons (D&D), incluindo as sub-raças **Anão da Montanha** e **Anão da Colina**:
+
+### **Anões**
+Os anões são uma raça resistente e determinada, conhecida por sua habilidade em artesanato, mineração, e combate. Eles vivem em grandes comunidades subterrâneas ou em montanhas, onde constroem fortalezas e cidades grandiosas. Anões são leais, trabalhadores e possuem uma forte conexão com suas tradições e clãs.
+
+- **Tamanho:** Pequeno
+- **Deslocamento:** 25 pés. O deslocamento não é reduzido quando usando armaduras pesadas.
+- **Visão no Escuro:** Acostumados a viverem nas profundezas da terra, anões têm uma visão no escuro de 60 pés.
+- **Resistência Anã:** Você tem vantagem em testes de resistência contra venenos e resistência a dano de veneno.
+- **Proficiente com Ferramentas:** Escolha um entre ferramentas de ferreiro, ferramentas de cervejeiro ou ferramentas de pedreiro.
+- **Conhecimento de Rochas:** Sempre que fizer um teste de Inteligência (História) relacionado à origem de um trabalho em pedra, você é considerado proficiente na perícia História e adiciona o dobro do seu bônus de proficiência ao teste, em vez do seu bônus de proficiência normal.
+- **Idiomas:** Você pode falar, ler e escrever Comum e Anão.
+
+#### **Sub-raças de Anão**
+
+##### **Anão da Montanha**
+- **Bônus de Atributo:** +2 em Constituição e +2 em Força.
+- **Armamento Anão:** Você tem proficiência com machados de batalha, machadinhas, martelos leves e martelos de guerra.
+- **Treinamento com Armaduras Anãs:** Você tem proficiência com armaduras leves e médias.
+- **Resistência Anã:** Como os outros anões, você tem vantagem em testes de resistência contra venenos e resistência a dano de veneno.
+- **Deslocamento:** 25 pés. O deslocamento não é reduzido quando usando armaduras pesadas.
+
+##### **Anão da Colina**
+- **Bônus de Atributo:** +2 em Constituição e +1 em Sabedoria.
+- **Resiliência Anã:** Você ganha pontos de vida extras iguais ao seu nível.
+- **Resistência Anã:** Assim como os outros anões, você tem vantagem em testes de resistência contra venenos e resistência a dano de veneno.
+- **Armamento Anão:** Proficiente com machados de batalha, machadinhas, martelos leves e martelos de guerra.
+- **Treinamento com Armaduras Anãs:** Proficiente com armaduras leves e médias.
+- **Deslocamento:** 25 pés. O deslocamento não é reduzido quando usando armaduras pesadas.
+
+### **Personalidade e Cultura**
+Anões são conhecidos por sua seriedade, diligência e senso de dever. Valorizam a honra, a lealdade e a tradição acima de tudo. A vida comunitária e familiar é essencial para eles, e seus clãs são estruturados com hierarquias bem definidas. Anões respeitam os mais velhos e seguem rigorosamente as tradições.
+
+### **Religião**
+A religião desempenha um papel significativo na cultura anã. Eles veneram deuses ligados à forja, à terra e ao combate. Os anões muitas vezes constroem grandes templos subterrâneos dedicados aos seus deuses.
+
+### **Habilidades e Artesanato**
+Anões são artesãos excepcionais, famosos por suas habilidades na forja e na lapidação de pedras. Eles criam armas, armaduras e joias de altíssima qualidade. Suas construções, tanto em cima quanto embaixo da terra, são robustas e duram séculos.
+
+### **Relações com Outras Raças**
+Anões podem parecer distantes ou mesmo rudes para outras raças, mas são extremamente leais aos seus amigos. Embora possam desconfiar de elfos e não se darem muito bem com orcs e goblins, respeitam aqueles que demonstram honestidade e coragem.

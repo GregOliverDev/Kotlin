@@ -1,0 +1,6 @@
+Index: 0, Attribute: Força
+Index: 1, Attribute: Destreza
+Index: 2, Attribute: Constituição
+Index: 3, Attribute: Inteligência 
+Index: 4, Attribute: Sabedoria
+Index: 5, Attribute: Carisma

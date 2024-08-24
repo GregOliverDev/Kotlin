@@ -1,0 +1,43 @@
+NÃO USADO AINDA 
+
+### **Raças Menos Comuns**
+1. **Draconatos**
+   - Com descendência de dragões, têm habilidades de respiração de fogo e bônus em Força e Carisma.
+
+2. **Goliaths**
+   - Gigantes de montanha com bônus em Força e Constituição e habilidades para sobreviver em condições adversas.
+
+3. **Aarakocra**
+   - Seres alados com habilidades de voo e bônus em Destreza.
+
+4. **Tabaxi**
+   - Felinos ágeis com habilidades de furtividade e bônus em Destreza e Carisma.
+
+5. **Tritões**
+   - Habitantes das águas, com habilidades aquáticas e bônus em Força e Carisma.
+
+6. **Yuan-Ti Puro Sangue**
+   - Seres com características de serpentes e habilidades mágicas, com bônus em Inteligência e Carisma.
+
+7. **Kenku**
+   - Aves sem capacidade de voo, com habilidades de imitação e furtividade.
+
+8. **Changeling**
+   - Capazes de mudar de forma e adaptar sua aparência, com bônus em Destreza e Carisma.
+
+9. **Warforged**
+   - Constructos viventes com habilidades robustas e bônus em Constituição e um ponto de vantagem em resistência a dano.
+
+10. **Shifter**
+    - Com habilidades de transformação e bônus em Destreza e Constituição.
+
+11. **Kalashtar**
+    - Com uma conexão psíquica com entidades de outro plano, com bônus em Sabedoria e Carisma.
+
+### **Raças dos Planos e Edicoes Anteriores**
+1. **Sahuagin**: Seres aquáticos com habilidades de combate e bônus em Força e Constituição.
+2. **Genasi**: Ligados aos planos elementares, com características baseadas nos elementos (Fogo, Água, Terra e Ar).
+
+### **Raças de Outros Livros e Expansões**
+- **Gith**: Divididos em Githyanki e Githzerai, com habilidades psíquicas e bônus em Inteligência e Sabedoria.
+- **Aasimar**: Seres com ascendência celestial, com bônus em Carisma e habilidades especiais.

@@ -1,0 +1,29 @@
+Aqui está uma descrição detalhada da raça **Tiefling** na 5ª edição de Dungeons & Dragons (D&D).
+
+### **Tieflings**
+Os tieflings são descendentes de humanos que fizeram pactos com forças infernais, o que lhes confere uma aparência demoníaca e poderes sobrenaturais. Embora tenham origens humanas, a influência de seus ancestrais infernais é evidente em sua pele avermelhada, chifres e cauda. Eles carregam o estigma de sua herança, muitas vezes enfrentando preconceito e desconfiança, mas também possuem grande poder e carisma.
+
+- **Tamanho:** Médio
+- **Deslocamento:** 30 pés
+- **Visão no Escuro:** Tieflings podem ver em condições de pouca luz a até 60 pés como se fosse luz do dia, e na escuridão total como se fosse luz fraca.
+- **Resistência Infernal:** Você tem resistência a dano de fogo, refletindo a herança infernal que corre em suas veias.
+- **Magia Infernal:** Você conhece o truque **Thaumaturgia**. Quando alcança o 3º nível, pode lançar a magia **Repreensão Infernal** uma vez por dia como uma magia de 2º nível. No 5º nível, você pode lançar a magia **Escuridão** uma vez por dia. Carisma é sua habilidade para lançar essas magias.
+- **Idiomas:** Você pode falar, ler e escrever Comum e Infernal.
+
+### **Características Gerais**
+- **Bônus de Atributo:** +2 em Carisma e +1 em Inteligência, refletindo sua natureza carismática e inteligência afiada.
+- **Poderes Infernais:** As habilidades mágicas inatas dos tieflings são fortemente influenciadas por sua herança demoníaca, concedendo-lhes poderes que os diferenciam de outras raças.
+
+### **Personalidade e Cultura**
+Tieflings são muitas vezes mal compreendidos e isolados devido à sua aparência e herança. Isso pode levar a uma personalidade reservada ou rebelde, mas também pode forjar uma determinação implacável para provar seu valor ou encontrar seu lugar no mundo. Muitos tieflings abraçam suas origens infernais, utilizando seus poderes para influenciar e manipular, enquanto outros buscam redenção ou aceitação.
+
+### **Religião**
+Tieflings tendem a ter uma relação complexa com a religião, especialmente devido à sua herança infernal. Alguns rejeitam os deuses tradicionais e buscam forças infernais ou demoníacas, enquanto outros procuram a redenção por meio da adoração de deuses benevolentes.
+
+### **Habilidades e Versatilidade**
+Os tieflings são naturalmente inclinados a se destacar em papéis que requerem carisma e inteligência, como feiticeiros, bruxos e bardos. Suas resistências e habilidades mágicas os tornam versáteis em várias situações, especialmente em combate e interações sociais.
+
+### **Relações com Outras Raças**
+Devido à sua aparência demoníaca e herança infernal, tieflings frequentemente enfrentam desconfiança e preconceito de outras raças. No entanto, aqueles que conseguem superar esses desafios podem ser amigos leais e poderosos aliados, especialmente se encontram aceitação em um grupo de aventureiros.
+
+Essa combinação de carisma, habilidades mágicas únicas e resistência a danos de fogo faz dos tieflings uma escolha atraente para jogadores que desejam interpretar um personagem com um passado sombrio e poderes infernais.

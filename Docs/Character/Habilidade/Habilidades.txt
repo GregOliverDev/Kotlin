@@ -1,0 +1,68 @@
+Em Dungeons & Dragons (D&D), as habilidades são atributos fundamentais que determinam como os personagens interagem com o mundo e enfrentam desafios. Cada habilidade está associada a uma das seis características principais (Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma). Aqui estão as habilidades principais em D&D 5ª Edição e o atributo associado a cada uma:
+
+### **Habilidades e seus Atributos**
+
+1. **Força (Força)**
+   - **Atletismo**: Medida da capacidade de realizar atividades físicas exigentes, como escalar, nadar e saltar.
+   
+2. **Destreza (Destreza)**
+   - **Acrobacia**: Relacionada à habilidade de realizar manobras físicas, como saltos, quedas e movimentos acrobáticos.
+   - **Furtividade**: Medida da habilidade de se mover sem ser detectado e de agir com discrição.
+   - **Prestidigitação**: Usada para atividades como desarmar armadilhas, roubar itens e abrir fechaduras.
+
+3. **Constituição (Constituição)**
+   - **Não há habilidades associadas diretamente**: A Constituição afeta a resistência física geral e os pontos de vida, mas não possui habilidades específicas.
+
+4. **Inteligência (Inteligência)**
+   - **Arcanismo**: Conhecimento sobre magia, encantamentos e o funcionamento das artes arcanas.
+   - **História**: Conhecimento sobre eventos passados, figuras históricas e antigas civilizações.
+   - **Investigação**: Habilidade de examinar o ambiente e encontrar pistas ou solucionar enigmas.
+   - **Natureza**: Conhecimento sobre flora, fauna e o ambiente natural.
+   - **Religião**: Conhecimento sobre divindades, cultos e práticas religiosas.
+
+5. **Sabedoria (Sabedoria)**
+   - **Percepção**: Habilidade de notar detalhes, perceber perigos e distinguir coisas à distância.
+   - **Intuição**: Habilidade de perceber a verdadeira intenção dos outros e compreender motivações ocultas.
+   - **Medicina**: Capacidade de diagnosticar e tratar ferimentos e doenças.
+   - **Sobrevivência**: Habilidade de sobreviver em ambientes selvagens, encontrar alimentos e navegar em terrenos difíceis.
+
+6. **Carisma (Carisma)**
+   - **Atuação**: Habilidade de se apresentar e realizar performances para entreter, enganar ou impressionar.
+   - **Enganação**: Capacidade de mentir e enganar os outros de maneira convincente.
+   - **Intimidação**: Habilidade de usar a força da personalidade para assustar ou coagir outros.
+   - **Persuasão**: Capacidade de convencer os outros a fazer algo ou aceitar um argumento.
+
+### **Resumo das Habilidades**
+
+	Carisma (Charisma)
+Enganação (Deception)
+Intimidação (Intimidation)
+Performance (Performance)
+Persuasão (Persuasion)
+
+	Constituição (Constitution)
+Não possui habilidades associadas diretamente.
+
+	Destreza (Dexterity)
+Acrobacia (Acrobatics)
+Furtividade (Stealth)
+Prestidigitação (Sleight of Hand)
+
+	Força (Strength)
+Atletismo (Athletics)
+
+	Inteligência (Intelligence)
+Arcanismo (Arcana)
+História (History)
+Investigação (Investigation)
+Natureza (Nature)
+Religião (Religion)
+
+	Sabedoria (Wisdom)
+Intuição (Insight)
+Medicina (Medicine)
+Percepção (Perception)
+Sobrevivência (Survival)
+Trato com Animais (Animal Handling)
+
+Essas habilidades são usadas para determinar o sucesso em diversas ações e testes durante o jogo. Cada uma está associada a um atributo específico e pode ser usada para superar desafios, interagir com outros personagens e explorar o mundo.

@@ -1,0 +1,75 @@
+
+NÂO USADO AINDA
+
+### **Raças Menos Comuns**
+
+1. **Draconatos**
+   - **Bônus:** +2 em Força e +1 em Carisma.
+   - **Características Especiais:** Habilidade de respiração de fogo (ou outros tipos de dano elementar), resistência a danos relacionados ao tipo de dragão do qual descendem.
+
+2. **Goliaths**
+   - **Bônus:** +2 em Força e +1 em Constituição.
+   - **Características Especiais:** Resistência ao frio, habilidades relacionadas a escalada e sobrevivência, e capacidade de resistir a danos em condições adversas.
+
+3. **Aarakocra**
+   - **Bônus:** +2 em Destreza e +1 em Sabedoria.
+   - **Características Especiais:** Habilidade de voar, visão no escuro, e bônus em habilidades relacionadas ao voo e à exploração aérea.
+
+4. **Tabaxi**
+   - **Bônus:** +2 em Destreza e +1 em Carisma.
+   - **Características Especiais:** Agilidade felina, habilidades de furtividade e exploração, e bônus em testes de Percepção e Furtividade.
+
+5. **Tritões**
+   - **Bônus:** +1 em Força e +1 em Carisma.
+   - **Características Especiais:** Respiração aquática, habilidades de natação, e habilidades relacionadas ao ambiente aquático.
+
+6. **Yuan-Ti Puro Sangue**
+   - **Bônus:** +2 em Inteligência e +1 em Carisma.
+   - **Características Especiais:** Resistência a veneno, habilidades mágicas relacionadas a serpentes, e habilidades em manipulação e dissimulação.
+
+7. **Kenku**
+   - **Bônus:** +2 em Destreza e +1 em Sabedoria.
+   - **Características Especiais:** Habilidades de imitação, furtividade natural, e vantagens em testes relacionados a imitação e furtividade.
+
+8. **Changeling**
+   - **Bônus:** +2 em Destreza e +1 em Carisma.
+   - **Características Especiais:** Habilidade de mudar de forma, adaptabilidade em situações sociais e furtivas.
+
+9. **Warforged**
+   - **Bônus:** +2 em Constituição e +1 em qualquer outro atributo.
+   - **Características Especiais:** Construção robótica, resistência a danos, e habilidades relacionadas a manutenção e reparo.
+
+10. **Shifter**
+    - **Bônus:** +2 em Destreza e +1 em Constituição.
+    - **Características Especiais:** Capacidade de transformação em formas de animais, habilidades relacionadas a combate e percepção aguçada.
+
+11. **Kalashtar**
+    - **Bônus:** +2 em Sabedoria e +1 em Carisma.
+    - **Características Especiais:** Conexão psíquica com entidades de outro plano, habilidades psíquicas e bônus em testes de Sabedoria e Carisma.
+
+### **Raças dos Planos e Edições Anteriores**
+
+1. **Sahuagin**
+   - **Bônus:** +2 em Força e +1 em Constituição.
+   - **Características Especiais:** Habilidades aquáticas, combate subaquático e resistência a condições adversas do fundo do mar.
+
+2. **Genasi**
+   - **Bônus:** +2 em Constituição e +1 em um atributo relacionado ao tipo de Genasi (Fogo, Água, Terra, Ar).
+   - **Características Especiais:** Habilidades elementares relacionadas ao tipo (como fogo, água, terra ou ar) e resistência a danos elementares.
+
+### **Raças de Outros Livros e Expansões**
+
+- **Gith**
+  - **Githyanki**
+    - **Bônus:** +2 em Inteligência e +1 em Constituição.
+    - **Características Especiais:** Habilidades psíquicas e bônus em combate com armas de prata.
+   
+  - **Githzerai**
+    - **Bônus:** +2 em Inteligência e +1 em Sabedoria.
+    - **Características Especiais:** Habilidades psíquicas e habilidades relacionadas à meditação e foco mental.
+
+- **Aasimar**
+  - **Bônus:** +2 em Carisma e +1 em um atributo secundário (varia de acordo com o sub-tipo).
+  - **Características Especiais:** Habilidades celestiais, resistência a dano, e bônus em perícias relacionadas a habilidades sobrenaturais e sociais.
+
+Espero que essa lista detalhada ajude você a entender melhor cada raça e sub-raça em D&D! Se precisar de mais informações sobre qualquer uma delas ou sobre outra coisa relacionada ao jogo, é só pedir.

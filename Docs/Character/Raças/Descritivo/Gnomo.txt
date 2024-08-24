@@ -1,0 +1,36 @@
+Aqui está uma descrição detalhada da raça **Gnomo** na 5ª edição de Dungeons & Dragons (D&D), incluindo as sub-raças **Gnomo das Rochas** e **Gnomo da Floresta**.
+
+### **Gnomos**
+Os gnomos são uma raça pequena e engenhosa, conhecida por sua inteligência, curiosidade e habilidade natural em mecânica e magia. Eles são brincalhões e vivem suas vidas com entusiasmo, apreciando as maravilhas do mundo ao seu redor. Os gnomos são inventivos e frequentemente se dedicam a projetos complexos e engenhocas.
+
+- **Tamanho:** Pequeno
+- **Deslocamento:** 25 pés
+- **Visão no Escuro:** Gnomos podem ver em condições de pouca luz a até 60 pés como se fosse luz do dia, e na escuridão total como se fosse luz fraca.
+- **Astúcia Gnômica:** Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia.
+- **Idiomas:** Você pode falar, ler e escrever Comum e Gnômico.
+
+#### **Gnomo das Rochas**
+- **Bônus de Atributo:** +2 em Inteligência e +1 em Constituição.
+- **Proficiência em Ferramentas de Artesão:** Você é proficiente com ferramentas de artesão (ferramentas de tinker). Isso reflete a habilidade dos gnomos das rochas de criar pequenos dispositivos e engenhocas.
+- **Conhecimento de Mecânica:** Você pode criar pequenos dispositivos mecânicos com ferramentas de tinker, como caixas de música, isqueiros, e brinquedos movidos a corda. Estes dispositivos são alimentados por suas habilidades de engenharia e magia.
+- **Astúcia Gnômica:** Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia, refletindo a natureza engenhosa e resistente dos gnomos das rochas.
+
+#### **Gnomo da Floresta**
+- **Bônus de Atributo:** +2 em Inteligência e +1 em Destreza.
+- **Furtividade Natural:** Você pode tentar se esconder mesmo quando estiver apenas levemente obscurecido por folhagem, chuva, neve ou outras condições naturais.
+- **Falar com Animais:** Você pode comunicar-se de forma simples com pequenos animais. Essa habilidade não permite que você controle os animais, mas eles podem entender você e, às vezes, responder.
+- **Astúcia Gnômica:** Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia, refletindo a natureza astuta e mágica dos gnomos da floresta.
+
+### **Personalidade e Cultura**
+Gnomos são curiosos e entusiastas, sempre procurando descobrir como as coisas funcionam. Eles têm uma mente ágil e são conhecidos por sua inventividade. A vida dos gnomos é frequentemente dedicada a projetos engenhosos, estudos mágicos ou aventuras.
+
+### **Religião**
+Gnomos adoram deuses associados à invenção, ao conhecimento e à magia. Eles celebram a criatividade e a curiosidade como virtudes, e suas cerimônias religiosas muitas vezes envolvem inovações e criações artísticas.
+
+### **Habilidades e Versatilidade**
+Os gnomos são extremamente versáteis em habilidades que exigem inteligência e destreza manual. Suas habilidades naturais em magia e mecânica fazem deles inventores e artesãos notáveis.
+
+### **Relações com Outras Raças**
+Gnomos são geralmente vistos com simpatia por outras raças, graças à sua natureza brincalhona e disposição amigável. Eles se dão bem com anões e humanos, especialmente em comunidades onde seu talento para invenções é valorizado.
+
+Essas características tornam os gnomos uma escolha popular para jogadores que desejam interpretar um personagem engenhoso, curioso e habilidoso em magia e tecnologia.

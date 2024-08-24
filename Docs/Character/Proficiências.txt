@@ -1,0 +1,122 @@
+Em Dungeons & Dragons (D&D), proficiências representam as habilidades e conhecimentos que um personagem possui, permitindo-lhes realizar ações específicas com mais eficácia. Essas proficiências são fundamentais para determinar o sucesso de muitas ações no jogo. Elas são divididas em várias categorias principais:
+
+### **1. Proficiências com Armas**
+
+- **Armas Simples**: Armas que não possuem requisitos especiais para serem usadas.
+- **Armas Marciais**: Armas mais complexas que requerem treinamento especializado.
+- **Arcos e Bestas**: Inclui arcos longos e curtos, bem como bestas leves e pesadas.
+- **Espadas**: Como espadas longas e curtas.
+
+### **2. Proficiências com Armaduras**
+
+- **Armaduras Leves**: Armaduras que não limitam a mobilidade.
+- **Armaduras Médias**: Armaduras que oferecem um equilíbrio entre proteção e mobilidade.
+- **Armaduras Pesadas**: Armaduras que oferecem alta proteção mas podem limitar a agilidade.
+- **Escudos**: Dispositivos usados para aumentar a proteção.
+
+### **3. Proficiências com Ferramentas**
+
+- **Ferramentas de Artesão**: Como ferramentas para ferreiros, carpinteiros, padeiros, etc.
+- **Ferramentas de Ladrão**: Utilizadas para abrir fechaduras e desarmar armadilhas.
+- **Instrumentos Musicais**: Como flautas, liras, tambores, etc.
+- **Kit de Alquimia**: Para criar poções e outros itens alquímicos.
+
+### **4. Proficiências com Perícias**
+
+Cada personagem é proficiente em certas perícias, que são habilidades usadas para superar desafios e realizar tarefas específicas. As perícias são agrupadas de acordo com seus atributos principais:
+
+- **Força**
+  - **Atletismo**: Escalar, nadar, saltar e realizar outras atividades físicas exigentes.
+
+- **Destreza**
+  - **Acrobacia**: Realizar manobras acrobáticas.
+  - **Furtividade**: Mover-se sem ser detectado.
+  - **Ladinagem**: Desarmar armadilhas e abrir fechaduras.
+
+- **Inteligência**
+  - **Arcanismo**: Conhecimento sobre magia.
+  - **História**: Conhecimento sobre eventos históricos e figuras passadas.
+  - **Investigação**: Examinar o ambiente para encontrar pistas.
+  - **Natureza**: Conhecimento sobre o mundo natural.
+  - **Religião**: Conhecimento sobre religiões e práticas divinas.
+
+- **Sabedoria**
+  - **Percepção**: Notar detalhes e perceber o ambiente.
+  - **Intuição**: Compreender intenções e motivação dos outros.
+  - **Medicina**: Tratar ferimentos e doenças.
+  - **Sobrevivência**: Navegar e sobreviver em ambientes selvagens.
+
+- **Carisma**
+  - **Atuação**: Realizar performances e entreter.
+  - **Enganação**: Mentir e enganar de forma convincente.
+  - **Intimidação**: Usar a presença e o poder para assustar.
+  - **Persuasão**: Convencer e influenciar os outros.
+
+### **5. Proficiências com Testes de Resistência**
+
+Cada classe fornece proficiência em dois testes de resistência específicos. Os testes de resistência são usados para resistir a efeitos prejudiciais e ataques mágicos. Os atributos associados são:
+
+- **Força**
+- **Destreza**
+- **Constituição**
+- **Inteligência**
+- **Sabedoria**
+- **Carisma**
+
+### **6. Proficiências com Magias**
+
+- **Conjuração**: A capacidade de lançar feitiços e usar magia. Cada classe de conjurador tem proficiências específicas relacionadas à magia.
+
+### **Resumo**
+
+**Armas:**
+- Armas Simples
+- Armas Marciais
+- Arcos e Bestas
+- Espadas
+
+**Armaduras:**
+- Armaduras Leves
+- Armaduras Médias
+- Armaduras Pesadas
+- Escudos
+
+**Ferramentas:**
+- Ferramentas de Artesão
+- Ferramentas de Ladrão
+- Instrumentos Musicais
+- Kit de Alquimia
+
+**Perícias:**
+- Atletismo
+- Acrobacia
+- Furtividade
+- Ladinagem
+- Arcanismo
+- História
+- Investigação
+- Natureza
+- Religião
+- Percepção
+- Intuição
+- Medicina
+- Sobrevivência
+- Atuação
+- Enganação
+- Intimidação
+- Persuasão
+
+**Testes de Resistência:**
+- Força
+- Destreza
+- Constituição
+- Inteligência
+- Sabedoria
+- Carisma
+
+**Magias:**
+- Conjuração (varia de acordo com a classe)
+
+Essas proficiências são detalhadas na ficha de personagem e desempenham um papel crucial na forma como um personagem se comporta e enfrenta desafios durante o jogo.
+
+proficiência é definida com base no level
