@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kotlin.iml" filepath="$PROJECT_DIR$/.idea/Kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Quack/Quack.iml" filepath="$PROJECT_DIR$/Quack/Quack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeDv2/src/main/main.iml" filepath="$PROJECT_DIR$/DeDv2/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lagoa/src/main/main1.iml" filepath="$PROJECT_DIR$/Lagoa/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lagoa/target/target.iml" filepath="$PROJECT_DIR$/Lagoa/target/target.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeDv2/target/target1.iml" filepath="$PROJECT_DIR$/DeDv2/target/target1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeDv2/src/test/test.iml" filepath="$PROJECT_DIR$/DeDv2/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeDv2/target/test-classes/test-classes.iml" filepath="$PROJECT_DIR$/DeDv2/target/test-classes/test-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lagoa/src/test/test1.iml" filepath="$PROJECT_DIR$/Lagoa/src/test/test1.iml" />
+    </modules>
+  </component>
+</project>
