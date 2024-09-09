@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-  
-</selector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/img"
+            android:tileMode="disabled" />
+        android:gravity="top" />
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="10dp"/>
+            android:color="#FF0000" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+
+</layer-list>
