@@ -1,14 +1,16 @@
 <resources>
-    <string name="app_name">DeDMobile</string>
-    <string name="bt_entrar">Entrar</string>
-    <string name="title_app">D&amp;D Mobile</string>
-
+    <string name="app_name">D&amp;DMobile</string>
     <string name="bt_next">Next</string>
     <string name="bt_back">Back</string>
 
+    <!--Main activity-->
+    <string name="bt_entrar">Entrar</string>
+    <string name="title_app">D&amp;D Mobile</string>
     <string name="name_player">Usuário</string>
     <string name="password_player">Senha</string>
 
+    <!--Character activity-->
+    <string name="cad_character">Cadastro de Personagem</string>
     <string name="name_character">Digite o nome do personagem</string>
     <string name="description_character">Descrição do personagem</string>
     <string name="age_character">Idade do personagem</string>
@@ -19,6 +21,7 @@
         <item>Prefiro não informar</item>
     </string-array>
 
+    <!--Attribute activity-->
     <string-array name="race_options">
         <item>Anão</item>
         <item>Elfo</item>

@@ -11,7 +11,6 @@ class SheetDeD(
     var amountDiceLive: Int,
     var attributes: List<Attribute> = DefineAttributes().defineAttributes().toList(),
     var race: Race,
-    var campaign: Campaign,
     var characterSheet: Character,
     var classCharacter: ClassCharacter,
     var currentHitPoints: Int,
