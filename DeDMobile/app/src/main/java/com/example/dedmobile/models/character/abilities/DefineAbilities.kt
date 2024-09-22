@@ -1,8 +1,8 @@
-package org.example.models.character.abilities
+package com.example.dedmobile.models.character.abilities
 
-import models.character.Ability
-import models.character.Attribute
-import org.example.models.character.attributes.DefineAttributes
+import com.example.dedmobile.models.character.Ability
+import com.example.dedmobile.models.character.Attribute
+import com.example.dedmobile.models.character.attributes.DefineAttributes
 
 class DefineAbilities {
     fun defineAbilities(): List<Ability> {

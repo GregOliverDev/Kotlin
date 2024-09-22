@@ -1,6 +1,6 @@
-package models.character
+package com.example.dedmobile.models.character
 
-import org.example.models.Topic
+import com.example.dedmobile.models.Topic
 
 class Attribute(
     var nameAttribute: String,

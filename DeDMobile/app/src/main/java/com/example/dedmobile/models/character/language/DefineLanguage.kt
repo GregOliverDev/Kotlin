@@ -1,9 +1,8 @@
-package org.example.models.character.language
+package com.example.dedmobile.models.character.language
 
 class DefineLanguage {
     fun defineLanguageRace(): String {
-        var controller: Int
-        var nameLanguage = ""
+        /*var controller: Int
         do {
             println("\n  Escolha uma Linguagem adicional")
             println("\n1 Élfico")
@@ -54,7 +53,7 @@ class DefineLanguage {
 
             }
         } while (controller != 0)
-
-        return nameLanguage
+*/
+        return "teste123"
     }
 }

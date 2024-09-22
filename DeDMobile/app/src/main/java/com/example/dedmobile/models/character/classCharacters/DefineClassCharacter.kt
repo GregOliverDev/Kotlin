@@ -1,7 +1,6 @@
-package org.example.models.character.classCharacters
+package com.example.dedmobile.models.character.classCharacters
 
-import models.character.SheetDeD
-import models.character.classCharacters.IClassCharacter
+import com.example.dedmobile.models.character.SheetDeD
 
 class DefineClassCharacter(private var iClassCharacter: IClassCharacter, var sheetDeD: SheetDeD) {
     fun createClassCharacter(): SheetDeD {

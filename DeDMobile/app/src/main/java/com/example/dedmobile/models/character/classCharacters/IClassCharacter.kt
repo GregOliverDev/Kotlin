@@ -1,6 +1,6 @@
-package models.character.classCharacters
+package com.example.dedmobile.models.character.classCharacters
 
-import models.character.SheetDeD
+import com.example.dedmobile.models.character.SheetDeD
 
 interface IClassCharacter {
     fun defineClassCharacter(sheetDeD: SheetDeD): SheetDeD

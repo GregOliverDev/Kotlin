@@ -1,6 +1,6 @@
-package org.example.models.character.attributes
+package com.example.dedmobile.models.character.attributes
 
-import models.character.Attribute
+import com.example.dedmobile.models.character.Attribute
 
 class DefineAttributes {
     fun defineAttributes(): List<Attribute> {

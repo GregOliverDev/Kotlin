@@ -1,10 +1,10 @@
-package org.example.models.character.attributes
+package com.example.dedmobile.models.character.attributes
 
-import models.character.Attribute
+import com.example.dedmobile.models.character.Attribute
 
 class ChoiceAttributes {
     fun choiceAttributesSheet(attributes: List<Attribute>): List<Attribute> {
-        var controller: Int
+        /*var controller: Int
         var cont = 0
         do {
             do {
@@ -62,8 +62,7 @@ class ChoiceAttributes {
                 }
 
             } while (controller != 0)
-        } while (cont != 2)
-
+        } while (cont != 2)*/
         return attributes
     }
 }

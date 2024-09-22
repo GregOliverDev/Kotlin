@@ -1,7 +1,8 @@
-package org.example.models.character.attributes
+package com.example.dedmobile.models.character.attributes
 
-import models.character.SheetDeD
-import org.example.models.dice.D6
+import com.example.dedmobile.models.character.attributes.IAttributes
+import com.example.dedmobile.models.character.SheetDeD
+import com.example.dedmobile.models.dice.D6
 
 class AttributesModel1 : IAttributes {
     override fun defineAttributesModel(sheetDeD: SheetDeD): SheetDeD {

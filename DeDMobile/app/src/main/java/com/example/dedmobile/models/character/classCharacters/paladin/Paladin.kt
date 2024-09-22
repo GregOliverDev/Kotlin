@@ -1,9 +1,9 @@
-package org.example.models.character.classCharacters.paladin
+package com.example.dedmobile.models.character.classCharacters.paladin
 
-import models.character.ClassCharacter
-import models.character.SheetDeD
-import models.character.classCharacters.IClassCharacter
-import org.example.models.dice.Dice
+import com.example.dedmobile.models.character.ClassCharacter
+import com.example.dedmobile.models.character.SheetDeD
+import com.example.dedmobile.models.character.classCharacters.IClassCharacter
+import com.example.dedmobile.models.dice.Dice
 
 class Paladin : IClassCharacter {
     override fun defineClassCharacter(sheetDeD: SheetDeD): SheetDeD {

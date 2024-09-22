@@ -1,4 +1,4 @@
-package org.example.models
+package com.example.dedmobile.models
 
 object Topic {
     private val observers = mutableMapOf<String, (Any?) -> Unit>()

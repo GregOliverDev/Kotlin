@@ -1,10 +1,11 @@
-package org.example.models.character.attributes
+package com.example.dedmobile.models.character.attributes
 
-import models.character.SheetDeD
+import com.example.dedmobile.models.character.attributes.IAttributes
+import com.example.dedmobile.models.character.SheetDeD
 
 class AttributesModel2 : IAttributes {
     override fun defineAttributesModel(sheetDeD: SheetDeD): SheetDeD {
-        var controller: Int
+        /*var controller: Int
         var currectNumbers: MutableList<Int>
         do {
             controller = 0
@@ -55,7 +56,7 @@ class AttributesModel2 : IAttributes {
             val currectChosenNumber = currectNumbers[index]
             sheetDeD.attributes[index].valueAt +=currectChosenNumber
         }
-        println()
+        println()*/
         return sheetDeD
     }
 }

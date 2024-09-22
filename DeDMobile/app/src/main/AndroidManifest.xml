@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CharacterActivity" />
+        <activity android:name=".AttributeActivity" />
     </application>
 
 </manifest>

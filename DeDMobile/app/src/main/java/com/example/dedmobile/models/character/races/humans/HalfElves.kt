@@ -1,11 +1,11 @@
-package org.example.models.character.races.humans
+package com.example.dedmobile.models.character.races.humans
 
-import models.character.Language
-import models.character.SheetDeD
-import org.example.models.character.SpecialFeature
-import org.example.models.character.attributes.ChoiceAttributes
-import org.example.models.character.races.IRace
-import org.example.models.character.language.DefineLanguage
+import com.example.dedmobile.models.character.Language
+import com.example.dedmobile.models.character.SheetDeD
+import com.example.dedmobile.models.character.SpecialFeature
+import com.example.dedmobile.models.character.attributes.ChoiceAttributes
+import com.example.dedmobile.models.character.language.DefineLanguage
+import com.example.dedmobile.models.character.races.IRace
 
 class HalfElves : IRace {
     override fun defineRace(sheetDeD: SheetDeD): SheetDeD {

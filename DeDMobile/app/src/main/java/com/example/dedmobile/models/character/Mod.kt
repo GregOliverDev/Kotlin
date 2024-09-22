@@ -1,4 +1,4 @@
-package org.example.models.character
+package com.example.dedmobile.models.character
 
 class Mod(
     var nameMod: String,

@@ -1,4 +1,4 @@
-package models.character
+package com.example.dedmobile.models.character
 
 class Character(
     var age: Int,

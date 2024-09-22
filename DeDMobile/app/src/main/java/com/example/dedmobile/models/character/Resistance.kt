@@ -1,5 +1,5 @@
-package org.example.models.character
+package com.example.dedmobile.models.character
 
-import org.example.models.damage.Damage
+import com.example.dedmobile.models.damage.Damage
 
 class Resistance(var resistanceDamage: Damage, var valueResistance: Int )

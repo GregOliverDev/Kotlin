@@ -1,6 +1,7 @@
-package org.example.models.character.attributes
+package com.example.dedmobile.models.character.attributes
 
-import models.character.SheetDeD
+import com.example.dedmobile.models.character.attributes.IAttributes
+import com.example.dedmobile.models.character.SheetDeD
 
 class DefineAttributesModel(private var iAttributes: IAttributes, var sheetDeD: SheetDeD) {
     fun createAttributesModel(): SheetDeD {

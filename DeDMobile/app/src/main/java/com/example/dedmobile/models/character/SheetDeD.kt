@@ -1,11 +1,10 @@
-package models.character
+package com.example.dedmobile.models.character
 
-import org.example.models.character.Mod
-import org.example.models.character.SpecialFeature
-import org.example.models.character.abilities.DefineAbilities
-import org.example.models.character.attributes.DefineAttributes
-import org.example.models.character.modifiers.DefineMod
-import org.example.models.dice.Dice
+import com.example.dedmobile.models.character.Mod
+import com.example.dedmobile.models.character.abilities.DefineAbilities
+import com.example.dedmobile.models.character.attributes.DefineAttributes
+import com.example.dedmobile.models.character.modifiers.DefineMod
+import com.example.dedmobile.models.dice.Dice
 
 class SheetDeD(
     var abilities: List<Ability> = DefineAbilities().defineAbilities().toList(),

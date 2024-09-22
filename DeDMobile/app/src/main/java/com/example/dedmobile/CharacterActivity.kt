@@ -1,35 +1,43 @@
 package com.example.dedmobile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
-import com.example.dedmobile.R
-import com.example.dedmobile.fragment.CharacterFragment1
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.Spinner
+import android.widget.TextView
+import androidx.activity.ComponentActivity
+import com.example.dedmobile.models.player.Player
 
-class CharacterActivity : AppCompatActivity() {
-
-    private lateinit var fragmentManager: FragmentManager
-
+@Suppress("DEPRECATION")
+class CharacterActivity : ComponentActivity() {
+    private lateinit var player: Player
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character)
 
-        val loginName = intent.getStringExtra("LOGIN_NAME")
+        val player = intent.getSerializableExtra("CURRENT_USER") as? Player
+
+        val characterImage: ImageView = findViewById(R.id.character_image)
+        characterImage.setImageResource(R.drawable.border_with_character)
+
+        val genderSpinner: Spinner = findViewById(R.id.gender_spinner)
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.gender_options,
+            android.R.layout.simple_spinner_item
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        genderSpinner.adapter = adapter
+
         val myButton: Button = findViewById(R.id.bt_next)
-        myButton.text = loginName
-
-        fragmentManager = supportFragmentManager
-
-        if (savedInstanceState == null) {
-            val fragment = CharacterFragment1()
-            fragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, fragment)
-                .commit()
+        myButton.setOnClickListener {
+            val intent = Intent(this, AttributeActivity::class.java)
+            startActivity(intent)
         }
-
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-
     }
 }

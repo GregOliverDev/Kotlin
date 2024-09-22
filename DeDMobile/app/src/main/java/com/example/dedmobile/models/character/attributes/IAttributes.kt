@@ -1,7 +1,6 @@
-package org.example.models.character.attributes
+package com.example.dedmobile.models.character.attributes
 
-import models.character.SheetDeD
-import java.awt.Choice
+import com.example.dedmobile.models.character.SheetDeD
 
 interface IAttributes {
     fun defineAttributesModel(sheetDeD: SheetDeD): SheetDeD

@@ -3,5 +3,87 @@
     <string name="bt_entrar">Entrar</string>
     <string name="title_app">D&amp;D Mobile</string>
 
-    <string name="bt_next">Próximo</string>
+    <string name="bt_next">Next</string>
+    <string name="bt_back">Back</string>
+
+    <string name="name_player">Usuário</string>
+    <string name="password_player">Senha</string>
+
+    <string name="name_character">Digite o nome do personagem</string>
+    <string name="description_character">Descrição do personagem</string>
+    <string name="age_character">Idade do personagem</string>
+    <string-array name="gender_options">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+        <item>Prefiro não informar</item>
+    </string-array>
+
+    <string-array name="race_options">
+        <item>Anão</item>
+        <item>Elfo</item>
+        <item>Gnomo</item>
+        <item>halfling</item>
+        <item>Humano</item>
+        <item>Meio-Elvo</item>
+        <item>Meio-Orc</item>
+        <item>Tiefling</item>
+    </string-array>
+
+    <string-array name="sub_race_options">
+        <item>Anão da Montanha</item>
+        <item>Anão da Colina</item>
+
+        <item>Alto Elfo</item>
+        <item>Elfo da Floresta</item>
+        <item>Elfo da lua</item>
+        <item>Drow</item>
+
+        <item>Gnomo da Floresta</item>
+        <item>Gnomo da Rocha</item>
+
+        <item>Halfling Pés-Leves</item>
+        <item>Halfling Robusto</item>
+
+    </string-array>
+
+    <string-array name="classe_character_options">
+        <item>Bárbaro</item>
+        <item>Bardo</item>
+        <item>Clérigo</item>
+        <item>Druida</item>
+        <item>Guerreiro</item>
+        <item>Mago</item>
+        <item>Monge</item>
+        <item>Paladino</item>
+        <item>Ladino</item>
+    </string-array>
+
+    <string name="points">Pontos: </string>
+
+    <string name="attribute">Atributo</string>
+
+    <string name="attribute_0">Força</string>
+    <string name="attribute_1">Destreza</string>
+    <string name="attribute_2">Constituição</string>
+    <string name="attribute_3">Inteligência</string>
+    <string name="attribute_4">Sabedoria</string>
+    <string name="attribute_5">Carisma</string>
+
+    <string name="attribute_0_value">8</string>
+    <string name="attribute_1_value">8</string>
+    <string name="attribute_2_value">8</string>
+    <string name="attribute_3_value">8</string>
+    <string name="attribute_4_value">8</string>
+    <string name="attribute_5_value">8</string>
+
+    <string name="mod">mod</string>
+
+    <string name="mod_0_value">0</string>
+    <string name="mod_1_value">0</string>
+    <string name="mod_2_value">0</string>
+    <string name="mod_3_value">0</string>
+    <string name="mod_4_value">0</string>
+    <string name="mod_5_value">0</string>
+
 </resources>

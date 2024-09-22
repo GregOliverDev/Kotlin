@@ -1,7 +1,7 @@
-package org.example.models.character.modifiers
+package com.example.dedmobile.models.character.modifiers
 
-import models.character.SheetDeD
-import org.example.models.character.Mod
+import com.example.dedmobile.models.character.SheetDeD
+import com.example.dedmobile.models.character.Mod
 
 class DefineMod {
     fun defineMods(): List<Mod> {

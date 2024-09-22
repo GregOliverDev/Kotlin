@@ -1,6 +1,6 @@
-package org.example.models.character.races
+package com.example.dedmobile.models.character.races
 
-import models.character.SheetDeD
+import com.example.dedmobile.models.character.SheetDeD
 
 class DefineRaceCharacter(private var iRace: IRace, var sheetDeD: SheetDeD) {
     fun createRace(): SheetDeD {

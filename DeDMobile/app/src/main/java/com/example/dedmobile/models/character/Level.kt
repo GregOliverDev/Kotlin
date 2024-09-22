@@ -1,8 +1,8 @@
-package models.character
+package com.example.dedmobile.models.character
 
-import org.example.models.Topic
+import com.example.dedmobile.models.Topic
 
-class Level(var level: Int, var xp: Int) {
+class Level(private var level: Int, private var xp: Int) {
     var alterLevel: Int
         get() = this.level
         set(value) {
