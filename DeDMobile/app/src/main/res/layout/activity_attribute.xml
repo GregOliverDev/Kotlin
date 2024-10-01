@@ -25,48 +25,29 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
                     android:background="@drawable/text_input"
                     android:text="@string/points"
                     android:textAlignment="viewStart"
                     android:textColor="#000"
                     android:textSize="23sp"
                     tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="27"
+                    android:textAlignment="viewStart"
+                    android:textColor="#fff"
+                    android:textSize="35sp"
+                    tools:ignore="TextSizeCheck" />
             </LinearLayout>
-
-            <Spinner
-                android:id="@+id/race"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/text_input"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Spinner
-                android:id="@+id/sub_race"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/text_input"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <Spinner
-                android:id="@+id/classe_character"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/text_input"
-                tools:ignore="TouchTargetSizeCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -142,7 +123,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/add_attribute_0"
+                        android:id="@+id/remove_attribute_0"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -152,7 +133,7 @@
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <ImageButton
-                        android:id="@+id/remove_attribute_0"
+                        android:id="@+id/add_attribute_0"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -173,6 +154,7 @@
                         tools:ignore="TextSizeCheck" />
 
                     <TextView
+                        android:id="@+id/value_attribute_0"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/value_attribute"
@@ -202,7 +184,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/add_attribute_1"
+                        android:id="@+id/remove_attribute_1"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -212,7 +194,7 @@
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <ImageButton
-                        android:id="@+id/remove_attribute_1"
+                        android:id="@+id/add_attribute_1"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -233,6 +215,7 @@
                         tools:ignore="TextSizeCheck" />
 
                     <TextView
+                        android:id="@+id/value_attribute_1"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/value_attribute"
@@ -262,7 +245,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/add_attribute_2"
+                        android:id="@+id/remove_attribute_2"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -272,7 +255,7 @@
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <ImageButton
-                        android:id="@+id/remove_attribute_2"
+                        android:id="@+id/add_attribute_2"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -293,6 +276,7 @@
                         tools:ignore="TextSizeCheck" />
 
                     <TextView
+                        android:id="@+id/value_attribute_2"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/value_attribute"
@@ -322,7 +306,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/add_attribute_3"
+                        android:id="@+id/remove_attribute_3"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -332,7 +316,7 @@
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <ImageButton
-                        android:id="@+id/remove_attribute_3"
+                        android:id="@+id/add_attribute_3"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -353,6 +337,7 @@
                         tools:ignore="TextSizeCheck" />
 
                     <TextView
+                        android:id="@+id/value_attribute_3"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/value_attribute"
@@ -382,7 +367,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/add_attribute_4"
+                        android:id="@+id/remove_attribute_4"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -392,7 +377,7 @@
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <ImageButton
-                        android:id="@+id/remove_attribute_4"
+                        android:id="@+id/add_attribute_4"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -413,6 +398,7 @@
                         tools:ignore="TextSizeCheck" />
 
                     <TextView
+                        android:id="@+id/value_attribute_4"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/value_attribute"
@@ -442,7 +428,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/add_attribute_5"
+                        android:id="@+id/remove_attribute_5"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -452,7 +438,7 @@
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <ImageButton
-                        android:id="@+id/remove_attribute_5"
+                        android:id="@+id/add_attribute_5"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_marginEnd="20dp"
@@ -473,6 +459,7 @@
                         tools:ignore="TextSizeCheck" />
 
                     <TextView
+                        android:id="@+id/value_attribute_5"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/value_attribute"

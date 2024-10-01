@@ -35,7 +35,7 @@
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_marginEnd="20dp"
-            android:src="@drawable/border_with_character"/>
+            android:src="@drawable/character_01"/>
 
         <LinearLayout
             android:layout_width="match_parent"

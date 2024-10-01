@@ -1,0 +1,4 @@
+adb shell
+run-as com.example.dedmobile
+cp /data/data/com.example.dedmobile/databases/DeD.db /sdcard/
+adb pull /sdcard/DeD.db

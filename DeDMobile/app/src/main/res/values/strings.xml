@@ -4,10 +4,11 @@
     <string name="bt_back">Back</string>
 
     <!--Main activity-->
-    <string name="bt_entrar">Entrar</string>
     <string name="title_app">D&amp;D Mobile</string>
     <string name="name_player">Usuário</string>
     <string name="password_player">Senha</string>
+    <string name="bt_register">Cadastrar</string>
+    <string name="bt_login">Entrar</string>
 
     <!--Character activity-->
     <string name="cad_character">Cadastro de Personagem</string>
@@ -64,7 +65,7 @@
 
     <string name="points">Pontos: </string>
 
-    <string name="attribute">Atributo</string>
+    <string name="attribute">Atributos</string>
 
     <string name="attribute_0">Força</string>
     <string name="attribute_1">Destreza</string>

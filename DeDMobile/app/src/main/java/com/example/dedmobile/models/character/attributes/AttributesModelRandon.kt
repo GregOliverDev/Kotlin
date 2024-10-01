@@ -1,14 +1,14 @@
 package com.example.dedmobile.models.character.attributes
 
-import com.example.dedmobile.models.character.attributes.IAttributes
-import com.example.dedmobile.models.character.SheetDeD
+import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.dice.D6
 
-class AttributesModel1 : IAttributes {
-    override fun defineAttributesModel(sheetDeD: SheetDeD): SheetDeD {
+class AttributesModelRandon {
+    fun defineAttributesModel(): List<Attribute> {
+        val attributes: List<Attribute> = DefineAttributes().defineAttributes().toList()
         for (index in 0..5) {
             val listNubers = mutableListOf<Int>()
-            for(numberRoll in 0..3){
+            for (numberRoll in 0..3) {
                 val d6 = D6()
                 val valueD6: Int = d6.getRandomValue()
                 listNubers.add(valueD6)
@@ -21,9 +21,8 @@ class AttributesModel1 : IAttributes {
 
             val sumListNumbers = listNubers.sum()
 
-            sheetDeD.attributes[index].valueAt +=sumListNumbers
+            attributes[index].valueAt += sumListNumbers
         }
-        println()
-        return sheetDeD
+        return attributes
     }
 }

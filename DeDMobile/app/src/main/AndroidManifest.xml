@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".CharacterActivity" />
         <activity android:name=".AttributeActivity" />
+        <activity android:name=".ChoicesActivity" />
     </application>
 
 </manifest>
