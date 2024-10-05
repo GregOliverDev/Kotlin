@@ -1,18 +1,4 @@
-        print("Nome: ")
-        val nameCharacter = readln()
-        print("Descrição fisica: ")
-        val physicalDescription = readln()
-        print("Idade: ")
-        val age = readln().toInt()
-        print("Genero: ")
-        val gender = readln()
-        print("Background: ")
-        val background = readln()
-
-        val level = Level(1, 0)
-
-        val character = Character(age, gender, background, nameCharacter, physicalDescription)
-        var iAttributes: IAttributes = AttributesModel1()
+      
         val race = Race("New Instence Race")
         var iRace: IRace = Dwarf()
         val subRace = Race("New Instence Sub Race")
@@ -43,10 +29,7 @@
         )
 
 
-        Topic.subscribe("valueAttribute") { valueChanged ->
-            val defineMod = DefineMod()
-            defineMod.updateMod(sheetDeD, valueChanged.toString())
-        }
+        
 
         Topic.subscribe("alterLevel") { valueChanged ->
             val defineLive = DefineLive()

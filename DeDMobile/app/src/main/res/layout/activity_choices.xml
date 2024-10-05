@@ -1,36 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:background="@drawable/border_with_color"
     android:layout_height="match_parent"
+    android:background="@drawable/border_with_color"
+    android:orientation="horizontal"
     android:padding="20dp">
 
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:ignore="UselessParent">
-        <Spinner
-            android:id="@+id/race"
+        tools:ignore="UselessParent"
+        android:layout_marginEnd="45dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/race"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <Spinner
+                android:id="@+id/race"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_input"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/text_input"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:text="@string/sub_race"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <Spinner
             android:id="@+id/sub_race"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/text_input"
             tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/classe"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
 
         <Spinner
             android:id="@+id/classe_character"
@@ -42,22 +94,337 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/text_input"
             tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="123dp"
+                android:background="@drawable/text_bonus"
+                android:text="@string/live"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/live"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/live_value"
+                android:text="@string/live_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_character"
+                android:text="@string/bt_back"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_character"
+                android:text="@string/bt_next"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:text="@string/attribute"
-            android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:textSize="25sp"
-            tools:ignore="TextSizeCheck" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="45dp"
+                android:text="@string/bonus"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/mod"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_bonus"
+                android:paddingEnd="79dp"
+                android:text="@string/attribute_0"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/value_attribute_0"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/attribute_0_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="35dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/mod_0_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="45dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_bonus"
+                android:paddingEnd="47dp"
+                android:text="@string/attribute_1"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/value_attribute_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/attribute_1_value"
+                android:textAlignment="center"
+                android:layout_marginEnd="35dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/mod_1_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="45dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_bonus"
+                android:text="@string/attribute_2"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/value_attribute_2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/attribute_2_value"
+                android:textAlignment="center"
+                android:layout_marginEnd="35dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/mod_2_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="45dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_bonus"
+                android:paddingEnd="20dp"
+                android:text="@string/attribute_3"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/value_attribute_3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/attribute_3_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="35dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/mod_3_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="45dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/text_bonus"
+                android:paddingEnd="35dp"
+                android:text="@string/attribute_4"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/value_attribute_4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/attribute_4_value"
+                android:textAlignment="center"
+                android:layout_marginEnd="35dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/mod_4_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="45dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/text_bonus"
+                android:paddingEnd="51dp"
+                android:text="@string/attribute_5"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/value_attribute_5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/attribute_5_value"
+                android:layout_marginEnd="35dp"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/value_attribute"
+                android:text="@string/mod_5_value"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:layout_marginEnd="45dp"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
 
     </LinearLayout>
 

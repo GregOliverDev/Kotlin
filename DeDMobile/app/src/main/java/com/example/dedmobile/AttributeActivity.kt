@@ -10,10 +10,13 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import com.example.dedmobile.models.Topic
 import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.character.Character
+import com.example.dedmobile.models.character.Mod
 import com.example.dedmobile.models.character.attributes.AttributesModel
 import com.example.dedmobile.models.character.attributes.DefineAttributes
+import com.example.dedmobile.models.character.modifiers.DefineMod
 import com.example.dedmobile.models.player.Player
 
 @Suppress("DEPRECATION")
@@ -22,21 +25,38 @@ class AttributeActivity : ComponentActivity() {
     private lateinit var character: Character
     private lateinit var attributesModel: AttributesModel
     private lateinit var attributes: List<Attribute>
+    private lateinit var mods: List<Mod>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_attribute)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         player = (intent.getSerializableExtra("CURRENT_USER") as? Player)!!
         character = (intent.getSerializableExtra("CURRENT_CHARACTER") as? Character)!!
+        val defineMod = DefineMod()
+        mods = defineMod.defineMods()
         attributes = DefineAttributes().defineAttributes().toList()
         attributesModel = AttributesModel()
 
+        val points: TextView = findViewById(R.id.points)
+
         val btNext: Button = findViewById(R.id.bt_next)
         btNext.setOnClickListener {
-            val intent = Intent(this, ChoicesActivity::class.java)
-            intent.putExtra("CURRENT_USER", player)
-            intent.putExtra("CURRENT_CHARACTER", character)
-            startActivity(intent)
+            val pointsCurrent = points.text.toString().toIntOrNull() ?: 0
+            if (pointsCurrent == 0) {
+                val intent = Intent(this, ChoicesActivity::class.java)
+                intent.putExtra("CURRENT_USER", player)
+                intent.putExtra("CURRENT_CHARACTER", character)
+                intent.putExtra("CURRENT_ATTRIBUTES", attributes.toTypedArray())
+                startActivity(intent)
+            } else {
+                val toast =
+                    Toast.makeText(this, "Distribua todos os pontos", Toast.LENGTH_SHORT)
+                toast.show()
+
+                Handler(Looper.getMainLooper()).postDelayed({
+                    toast.cancel()
+                }, 5000)
+            }
         }
 
         val btBack: Button = findViewById(R.id.bt_back)
@@ -47,14 +67,19 @@ class AttributeActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        val points: TextView = findViewById(R.id.points)
-
         val valueAttri0: TextView = findViewById(R.id.value_attribute_0)
         val valueAttri1: TextView = findViewById(R.id.value_attribute_1)
         val valueAttri2: TextView = findViewById(R.id.value_attribute_2)
         val valueAttri3: TextView = findViewById(R.id.value_attribute_3)
         val valueAttri4: TextView = findViewById(R.id.value_attribute_4)
         val valueAttri5: TextView = findViewById(R.id.value_attribute_5)
+
+        val valueMod0: TextView = findViewById(R.id.value_mod_0)
+        val valueMod1: TextView = findViewById(R.id.value_mod_1)
+        val valueMod2: TextView = findViewById(R.id.value_mod_2)
+        val valueMod3: TextView = findViewById(R.id.value_mod_3)
+        val valueMod4: TextView = findViewById(R.id.value_mod_4)
+        val valueMod5: TextView = findViewById(R.id.value_mod_5)
 
         val btRemAttri0: ImageButton = findViewById(R.id.remove_attribute_0)
         val btRemAttri1: ImageButton = findViewById(R.id.remove_attribute_1)
@@ -69,6 +94,26 @@ class AttributeActivity : ComponentActivity() {
         val btAddAttri3: ImageButton = findViewById(R.id.add_attribute_3)
         val btAddAttri4: ImageButton = findViewById(R.id.add_attribute_4)
         val btAddAttri5: ImageButton = findViewById(R.id.add_attribute_5)
+
+        Topic.subscribe("valueAttribute") { valueChanged ->
+            var attribute: Attribute
+            for (index in 0..5) {
+                if (attributes[index].nameAttribute == valueChanged) {
+                    attribute = attributes[index]
+                    mods = defineMod.updateMod(mods, attribute, index)
+
+                    valueMod0.text = mods[0].valueMod.toString()
+                    valueMod1.text = mods[1].valueMod.toString()
+                    valueMod2.text = mods[2].valueMod.toString()
+                    valueMod3.text = mods[3].valueMod.toString()
+                    valueMod4.text = mods[4].valueMod.toString()
+                    valueMod5.text = mods[5].valueMod.toString()
+
+                }
+            }
+        }
+
+        attributes = DefineAttributes().defineAttributes().toList()
 
         btRemAttri0.setOnClickListener {
             var pointsCurrent = points.text.toString().toIntOrNull() ?: 0

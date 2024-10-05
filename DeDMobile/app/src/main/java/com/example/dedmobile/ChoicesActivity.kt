@@ -1,17 +1,22 @@
 package com.example.dedmobile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.Spinner
 import androidx.activity.ComponentActivity
+import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.character.Character
+import com.example.dedmobile.models.character.attributes.DefineAttributes
 import com.example.dedmobile.models.player.Player
 
 @Suppress("DEPRECATION")
-class ChoicesActivity: ComponentActivity() {
+class ChoicesActivity : ComponentActivity() {
     private lateinit var player: Player
     private lateinit var character: Character
+    private lateinit var attributes: List<Attribute>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +24,12 @@ class ChoicesActivity: ComponentActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         player = (intent.getSerializableExtra("CURRENT_USER") as? Player)!!
         character = (intent.getSerializableExtra("CURRENT_CHARACTER") as? Character)!!
+        val receivedAttributes = intent.getSerializableExtra("CURRENT_ATTRIBUTES") as? Array<*>
+        val attributesReturn = receivedAttributes?.filterIsInstance<Attribute>() ?: emptyList()
+
+        attributes = attributesReturn.ifEmpty {
+            DefineAttributes().defineAttributes().toList()
+        }
 
         val raceSpinner: Spinner = findViewById(R.id.race)
         val adapterRace = ArrayAdapter.createFromResource(
@@ -47,5 +58,20 @@ class ChoicesActivity: ComponentActivity() {
         adapterClasseCharacter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         classeCharacterSpinner.adapter = adapterClasseCharacter
 
+        val btNext: Button = findViewById(R.id.bt_next)
+        btNext.setOnClickListener {
+            val intent = Intent(this, ChoicesActivity::class.java)
+            intent.putExtra("CURRENT_USER", player)
+            intent.putExtra("CURRENT_CHARACTER", character)
+            startActivity(intent)
+        }
+
+        val btBack: Button = findViewById(R.id.bt_back)
+        btBack.setOnClickListener {
+            val intent = Intent(this, AttributeActivity::class.java)
+            intent.putExtra("CURRENT_USER", player)
+            intent.putExtra("CURRENT_CHARACTER", character)
+            startActivity(intent)
+        }
     }
 }

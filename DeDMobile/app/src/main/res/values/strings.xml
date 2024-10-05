@@ -23,6 +23,41 @@
     </string-array>
 
     <!--Attribute activity-->
+    <string name="points">Pontos</string>
+
+    <string name="attribute">Atributos</string>
+
+    <string name="attribute_0">Força</string>
+    <string name="attribute_1">Destreza</string>
+    <string name="attribute_2">Constituição</string>
+    <string name="attribute_3">Inteligência</string>
+    <string name="attribute_4">Sabedoria</string>
+    <string name="attribute_5">Carisma</string>
+
+    <string name="attribute_0_value">8</string>
+    <string name="attribute_1_value">8</string>
+    <string name="attribute_2_value">8</string>
+    <string name="attribute_3_value">8</string>
+    <string name="attribute_4_value">8</string>
+    <string name="attribute_5_value">8</string>
+
+    <string name="mod">Mod</string>
+
+    <string name="mod_0_value">0</string>
+    <string name="mod_1_value">0</string>
+    <string name="mod_2_value">0</string>
+    <string name="mod_3_value">0</string>
+    <string name="mod_4_value">0</string>
+    <string name="mod_5_value">0</string>
+
+    <!--Choices Activity-->
+    <string name="bonus">Bônus de Atributos</string>
+    <string name="race">Raça</string>
+    <string name="sub_race">Sub Raça</string>
+    <string name="classe">Classe</string>
+    <string name="live">Vida</string>
+    <string name="live_value">4</string>
+
     <string-array name="race_options">
         <item>Anão</item>
         <item>Elfo</item>
@@ -63,31 +98,5 @@
         <item>Ladino</item>
     </string-array>
 
-    <string name="points">Pontos: </string>
-
-    <string name="attribute">Atributos</string>
-
-    <string name="attribute_0">Força</string>
-    <string name="attribute_1">Destreza</string>
-    <string name="attribute_2">Constituição</string>
-    <string name="attribute_3">Inteligência</string>
-    <string name="attribute_4">Sabedoria</string>
-    <string name="attribute_5">Carisma</string>
-
-    <string name="attribute_0_value">8</string>
-    <string name="attribute_1_value">8</string>
-    <string name="attribute_2_value">8</string>
-    <string name="attribute_3_value">8</string>
-    <string name="attribute_4_value">8</string>
-    <string name="attribute_5_value">8</string>
-
-    <string name="mod">mod</string>
-
-    <string name="mod_0_value">0</string>
-    <string name="mod_1_value">0</string>
-    <string name="mod_2_value">0</string>
-    <string name="mod_3_value">0</string>
-    <string name="mod_4_value">0</string>
-    <string name="mod_5_value">0</string>
 
 </resources>

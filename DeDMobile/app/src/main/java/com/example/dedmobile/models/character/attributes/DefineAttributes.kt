@@ -11,6 +11,13 @@ class DefineAttributes {
         attributes.add(Attribute("Sabedoria", valueAttribute = 8))
         attributes.add(Attribute("Carisma", valueAttribute = 8))
 
+        attributes[0].valueAt = 8
+        attributes[1].valueAt = 8
+        attributes[2].valueAt = 8
+        attributes[3].valueAt = 8
+        attributes[4].valueAt = 8
+        attributes[5].valueAt = 8
+
         return attributes
     }
 }

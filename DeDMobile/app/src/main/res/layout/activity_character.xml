@@ -35,7 +35,8 @@
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_marginEnd="20dp"
-            android:src="@drawable/character_01"/>
+            android:src="@drawable/character_01"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,7 +71,8 @@
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/text_input"
                 android:hint="@string/age_character"
-                android:inputType="number" />
+                android:inputType="number"
+                tools:ignore="Autofill" />
         </LinearLayout>
 
     </LinearLayout>
@@ -98,7 +100,8 @@
             android:layout_height="70dp"
             android:background="@drawable/button_character"
             android:scaleType="centerCrop"
-            android:src="@drawable/right" />
+            android:src="@drawable/right"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Spinner
             android:id="@+id/gender_spinner"

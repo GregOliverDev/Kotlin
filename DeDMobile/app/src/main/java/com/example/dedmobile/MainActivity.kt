@@ -60,7 +60,7 @@ class MainActivity : ComponentActivity() {
                 }, 5000)
             } else {
                 player = findPlayer
-                character = Character(0, " ",0, 0, " ","")
+                character = Character(0, "Masculino", 0, "","")
                 val intent = Intent(this, CharacterActivity::class.java)
                 intent.putExtra("CURRENT_USER", player)
                 intent.putExtra("CURRENT_CHARACTER", character)

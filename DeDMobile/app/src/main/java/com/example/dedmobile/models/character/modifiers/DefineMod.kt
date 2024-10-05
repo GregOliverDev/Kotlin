@@ -1,5 +1,6 @@
 package com.example.dedmobile.models.character.modifiers
 
+import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.character.SheetDeD
 import com.example.dedmobile.models.character.Mod
 
@@ -15,136 +16,128 @@ class DefineMod {
         return mods
     }
 
-    fun updateMod(sheetDeD: SheetDeD, nameAttribute: String) {
-        for (index in 0..5) {
-            if (sheetDeD.attributes[index].nameAttribute == nameAttribute) {
-                when (sheetDeD.attributes[index].valueAttribute) {
-                    1 -> {
-                        sheetDeD.mods[index].valueMod = -4
-                    }
+    fun updateMod(mods: List<Mod>, attribute: Attribute, index: Int): List<Mod> {
+        when (attribute.valueAttribute) {
+            1 -> {
+                mods[index].valueMod = -4
+            }
 
-                    2 -> {
-                        sheetDeD.mods[index].valueMod = -4
-                    }
+            2 -> {
+                mods[index].valueMod = -4
+            }
 
-                    3 -> {
-                        sheetDeD.mods[index].valueMod = -4
-                    }
+            3 -> {
+                mods[index].valueMod = -4
+            }
 
-                    4 -> {
-                        sheetDeD.mods[index].valueMod = -3
-                    }
+            4 -> {
+                mods[index].valueMod = -3
+            }
 
-                    5 -> {
-                        sheetDeD.mods[index].valueMod = -3
-                    }
+            5 -> {
+                mods[index].valueMod = -3
+            }
 
-                    6 -> {
-                        sheetDeD.mods[index].valueMod = -2
-                    }
+            6 -> {
+                mods[index].valueMod = -2
+            }
 
-                    7 -> {
-                        sheetDeD.mods[index].valueMod = -2
-                    }
+            7 -> {
+                mods[index].valueMod = -2
+            }
 
-                    8 -> {
-                        sheetDeD.mods[index].valueMod = -1
-                    }
+            8 -> {
+                mods[index].valueMod = -1
+            }
 
-                    9 -> {
-                        sheetDeD.mods[index].valueMod = -1
-                    }
+            9 -> {
+                mods[index].valueMod = -1
+            }
 
-                    10 -> {
-                        sheetDeD.mods[index].valueMod = 0
-                    }
+            10 -> {
+                mods[index].valueMod = 0
+            }
 
-                    11 -> {
-                        sheetDeD.mods[index].valueMod = 0
-                    }
+            11 -> {
+                mods[index].valueMod = 0
+            }
 
-                    12 -> {
-                        sheetDeD.mods[index].valueMod = 1
-                    }
+            12 -> {
+                mods[index].valueMod = 1
+            }
 
-                    13 -> {
-                        sheetDeD.mods[index].valueMod = 1
-                    }
+            13 -> {
+                mods[index].valueMod = 1
+            }
 
-                    14 -> {
-                        sheetDeD.mods[index].valueMod = 2
-                    }
+            14 -> {
+                mods[index].valueMod = 2
+            }
 
-                    15 -> {
-                        sheetDeD.mods[index].valueMod = 2
-                    }
+            15 -> {
+                mods[index].valueMod = 2
+            }
 
-                    16 -> {
-                        sheetDeD.mods[index].valueMod = 3
-                    }
+            16 -> {
+                mods[index].valueMod = 3
+            }
 
-                    17 -> {
-                        sheetDeD.mods[index].valueMod = 3
-                    }
+            17 -> {
+                mods[index].valueMod = 3
+            }
 
-                    18 -> {
-                        sheetDeD.mods[index].valueMod = 4
-                    }
+            18 -> {
+                mods[index].valueMod = 4
+            }
 
-                    19 -> {
-                        sheetDeD.mods[index].valueMod = 4
-                    }
+            19 -> {
+                mods[index].valueMod = 4
+            }
 
-                    20 -> {
-                        sheetDeD.mods[index].valueMod = 5
-                    }
+            20 -> {
+                mods[index].valueMod = 5
+            }
 
-                    21 -> {
-                        sheetDeD.mods[index].valueMod = 5
-                    }
+            21 -> {
+                mods[index].valueMod = 5
+            }
 
-                    22 -> {
-                        sheetDeD.mods[index].valueMod = 6
-                    }
+            22 -> {
+                mods[index].valueMod = 6
+            }
 
-                    23 -> {
-                        sheetDeD.mods[index].valueMod = 6
-                    }
+            23 -> {
+                mods[index].valueMod = 6
+            }
 
-                    24 -> {
-                        sheetDeD.mods[index].valueMod = 7
-                    }
+            24 -> {
+                mods[index].valueMod = 7
+            }
 
-                    25 -> {
-                        sheetDeD.mods[index].valueMod = 7
-                    }
+            25 -> {
+                mods[index].valueMod = 7
+            }
 
-                    26 -> {
-                        sheetDeD.mods[index].valueMod = 8
-                    }
+            26 -> {
+                mods[index].valueMod = 8
+            }
 
-                    27 -> {
-                        sheetDeD.mods[index].valueMod = 8
-                    }
+            27 -> {
+                mods[index].valueMod = 8
+            }
 
-                    28 -> {
-                        sheetDeD.mods[index].valueMod = 9
-                    }
+            28 -> {
+                mods[index].valueMod = 9
+            }
 
-                    29 -> {
-                        sheetDeD.mods[index].valueMod = 9
-                    }
+            29 -> {
+                mods[index].valueMod = 9
+            }
 
-                    30 -> {
-                        sheetDeD.mods[index].valueMod = 10
-                    }
-                }
-//                println(
-//                    "Atributo ${sheetDeD.attributes[index].nameAttribute} alterado \n" +
-//                            "Valor do atributo ${sheetDeD.attributes[index].valueAttribute}\n" +
-//                            "Novo modificador ${sheetDeD.mods[index].valueMod}\n"
-//                )
+            30 -> {
+                mods[index].valueMod = 10
             }
         }
+        return mods
     }
 }
