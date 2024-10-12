@@ -32,22 +32,16 @@ class MainActivity : ComponentActivity() {
         btRegister.setOnClickListener {
             val namePlayer = nameUser.text.toString()
             val passwordPlayer = passwordUser.text.toString()
-            val findPlayer = playerController.getPlayer(namePlayer, passwordPlayer)
-
-            if (findPlayer != null) {
-                Toast.makeText(this, "Usuário ja existente!", Toast.LENGTH_SHORT).show()
+            if (playerController.insertPlayer(namePlayer, passwordPlayer)) {
+                Toast.makeText(this, "Usuário inserido com sucesso!", Toast.LENGTH_SHORT).show()
             } else {
-                if (playerController.insertPlayer(namePlayer, passwordPlayer)) {
-                    Toast.makeText(this, "Usuário inserido com sucesso!", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Falha ao inserir o usuário.", Toast.LENGTH_SHORT).show()
-                }
+                Toast.makeText(this, "Usuário ja existente!", Toast.LENGTH_SHORT).show()
             }
         }
 
         val btEntrar: Button = findViewById(R.id.entrar)
         btEntrar.setOnClickListener {
-            val namePlayer: String  = nameUser.text.toString()
+            val namePlayer: String = nameUser.text.toString()
             val passwordPlayer: String = passwordUser.text.toString()
 
             val findPlayer = playerController.getPlayer(namePlayer, passwordPlayer)
@@ -60,7 +54,7 @@ class MainActivity : ComponentActivity() {
                 }, 5000)
             } else {
                 player = findPlayer
-                character = Character(0, "Masculino", 0, "","")
+                character = Character(0, "Masculino", 0, "", "")
                 val intent = Intent(this, CharacterActivity::class.java)
                 intent.putExtra("CURRENT_USER", player)
                 intent.putExtra("CURRENT_CHARACTER", character)

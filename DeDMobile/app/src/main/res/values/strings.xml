@@ -55,36 +55,47 @@
     <string name="race">Raça</string>
     <string name="sub_race">Sub Raça</string>
     <string name="classe">Classe</string>
+    <string name="language">Linguagem</string>
     <string name="live">Vida</string>
-    <string name="live_value">4</string>
+    <string name="live_value">12</string>
 
     <string-array name="race_options">
         <item>Anão</item>
         <item>Elfo</item>
         <item>Gnomo</item>
-        <item>halfling</item>
+        <item>Halfling</item>
         <item>Humano</item>
         <item>Meio-Elvo</item>
         <item>Meio-Orc</item>
         <item>Tiefling</item>
     </string-array>
 
-    <string-array name="sub_race_options">
+    <string-array name="sub_race_dwarfs">
+        <item>Sem Sub-Raça</item>
         <item>Anão da Montanha</item>
         <item>Anão da Colina</item>
+    </string-array>
 
+    <string-array name="sub_race_elves">
+        <item>Sem Sub-Raça</item>
         <item>Alto Elfo</item>
         <item>Elfo da Floresta</item>
         <item>Elfo da lua</item>
-        <item>Drow</item>
+        <item>Elfo das Trevas</item>
+    </string-array>
 
+    <string-array name="sub_race_gnomes">
+        <item>Sem Sub-Raça</item>
         <item>Gnomo da Floresta</item>
         <item>Gnomo da Rocha</item>
+    </string-array>
 
+    <string-array name="sub_race_halflings">
+        <item>Sem Sub-Raça</item>
         <item>Halfling Pés-Leves</item>
         <item>Halfling Robusto</item>
-
     </string-array>
+
 
     <string-array name="classe_character_options">
         <item>Bárbaro</item>
@@ -96,6 +107,15 @@
         <item>Monge</item>
         <item>Paladino</item>
         <item>Ladino</item>
+    </string-array>
+
+    <string-array name="language_add">
+        <item>Élfico</item>
+        <item>Anão</item>
+        <item>Infernal</item>
+        <item>Orc</item>
+        <item>Gnômico</item>
+        <item>Halfling</item>
     </string-array>
 
 

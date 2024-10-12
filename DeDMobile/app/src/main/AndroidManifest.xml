@@ -25,6 +25,7 @@
         <activity android:name=".CharacterActivity" />
         <activity android:name=".AttributeActivity" />
         <activity android:name=".ChoicesActivity" />
+        <activity android:name=".SaveCharacterActivity" />
     </application>
 
 </manifest>

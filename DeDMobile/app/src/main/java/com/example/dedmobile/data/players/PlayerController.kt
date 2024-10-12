@@ -11,8 +11,21 @@ class PlayerController(context: Context) {
         if (namePlayer.isBlank() || password.isBlank()) {
             return false
         }
+        val db = databaseHelper.readableDatabase
+        val cursor = db.query(
+            "players",
+            arrayOf("namePlayer"),
+            "namePlayer = ?",
+            arrayOf(namePlayer),
+            null, null, null
+        )
 
-        val db = databaseHelper.writableDatabase
+        val exists = cursor.count > 0
+        cursor.close()
+
+        if (exists) {
+            return false
+        }
 
         val contentValues = ContentValues().apply {
             put("namePlayer", namePlayer)

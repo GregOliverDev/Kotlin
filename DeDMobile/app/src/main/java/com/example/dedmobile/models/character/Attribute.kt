@@ -13,4 +13,7 @@ class Attribute(
             this.valueAttribute = value
             Topic.notify("valueAttribute", this.nameAttribute)
         }
+    fun copy(): Attribute {
+        return Attribute(nameAttribute, valueAt)
+    }
 }

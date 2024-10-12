@@ -47,6 +47,7 @@ class AttributeActivity : ComponentActivity() {
                 intent.putExtra("CURRENT_USER", player)
                 intent.putExtra("CURRENT_CHARACTER", character)
                 intent.putExtra("CURRENT_ATTRIBUTES", attributes.toTypedArray())
+                intent.putExtra("CURRENT_MOD", mods.toTypedArray())
                 startActivity(intent)
             } else {
                 val toast =
@@ -242,13 +243,10 @@ class AttributeActivity : ComponentActivity() {
                     toast.cancel()
                 }, 5000)
             } else {
-                if ((pointsCurrent + attributesModel.defineAttributesModel(attributes[5].valueAttribute)) - (attributesModel.defineAttributesModel(
-                        attributes[5].valueAttribute + 1
-                    )) >= 0
-                ) {
-                    pointsCurrent += attributesModel.defineAttributesModel(attributes[0].valueAttribute)
-                    attributes[0].valueAt++
-                    pointsCurrent -= attributesModel.defineAttributesModel(attributes[0].valueAttribute)
+                pointsCurrent += attributesModel.defineAttributesModel(attributes[0].valueAttribute)
+                attributes[0].valueAt++
+                pointsCurrent -= attributesModel.defineAttributesModel(attributes[0].valueAttribute)
+                if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri0.text = attributes[0].valueAttribute.toString()
                 } else {
@@ -259,6 +257,7 @@ class AttributeActivity : ComponentActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         toast.cancel()
                     }, 5000)
+                    attributes[0].valueAt--
                 }
             }
         }
@@ -278,13 +277,10 @@ class AttributeActivity : ComponentActivity() {
                     toast.cancel()
                 }, 5000)
             } else {
-                if ((pointsCurrent + attributesModel.defineAttributesModel(attributes[5].valueAttribute)) - (attributesModel.defineAttributesModel(
-                        attributes[5].valueAttribute + 1
-                    )) >= 0
-                ) {
-                    pointsCurrent += attributesModel.defineAttributesModel(attributes[1].valueAttribute)
-                    attributes[1].valueAt++
-                    pointsCurrent -= attributesModel.defineAttributesModel(attributes[1].valueAttribute)
+                pointsCurrent += attributesModel.defineAttributesModel(attributes[1].valueAttribute)
+                attributes[1].valueAt++
+                pointsCurrent -= attributesModel.defineAttributesModel(attributes[1].valueAttribute)
+                if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri1.text = attributes[1].valueAttribute.toString()
                 } else {
@@ -295,6 +291,7 @@ class AttributeActivity : ComponentActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         toast.cancel()
                     }, 5000)
+                    attributes[1].valueAt--
                 }
             }
         }
@@ -314,13 +311,10 @@ class AttributeActivity : ComponentActivity() {
                     toast.cancel()
                 }, 5000)
             } else {
-                if ((pointsCurrent + attributesModel.defineAttributesModel(attributes[5].valueAttribute)) - (attributesModel.defineAttributesModel(
-                        attributes[5].valueAttribute + 1
-                    )) >= 0
-                ) {
-                    pointsCurrent += attributesModel.defineAttributesModel(attributes[2].valueAttribute)
-                    attributes[2].valueAt++
-                    pointsCurrent -= attributesModel.defineAttributesModel(attributes[2].valueAttribute)
+                pointsCurrent += attributesModel.defineAttributesModel(attributes[2].valueAttribute)
+                attributes[2].valueAt++
+                pointsCurrent -= attributesModel.defineAttributesModel(attributes[2].valueAttribute)
+                if ( pointsCurrent >= 0 ) {
                     points.text = pointsCurrent.toString()
                     valueAttri2.text = attributes[2].valueAttribute.toString()
                 } else {
@@ -331,6 +325,7 @@ class AttributeActivity : ComponentActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         toast.cancel()
                     }, 5000)
+                    attributes[2].valueAt--
                 }
             }
         }
@@ -350,13 +345,10 @@ class AttributeActivity : ComponentActivity() {
                     toast.cancel()
                 }, 5000)
             } else {
-                if ((pointsCurrent + attributesModel.defineAttributesModel(attributes[5].valueAttribute)) - (attributesModel.defineAttributesModel(
-                        attributes[5].valueAttribute + 1
-                    )) >= 0
-                ) {
-                    pointsCurrent += attributesModel.defineAttributesModel(attributes[3].valueAttribute)
-                    attributes[3].valueAt++
-                    pointsCurrent -= attributesModel.defineAttributesModel(attributes[3].valueAttribute)
+                pointsCurrent += attributesModel.defineAttributesModel(attributes[3].valueAttribute)
+                attributes[3].valueAt++
+                pointsCurrent -= attributesModel.defineAttributesModel(attributes[3].valueAttribute)
+                if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri3.text = attributes[3].valueAttribute.toString()
                 } else {
@@ -367,6 +359,7 @@ class AttributeActivity : ComponentActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         toast.cancel()
                     }, 5000)
+                    attributes[3].valueAt--
                 }
             }
         }
@@ -386,13 +379,10 @@ class AttributeActivity : ComponentActivity() {
                     toast.cancel()
                 }, 5000)
             } else {
-                if ((pointsCurrent + attributesModel.defineAttributesModel(attributes[5].valueAttribute)) - (attributesModel.defineAttributesModel(
-                        attributes[5].valueAttribute + 1
-                    )) >= 0
-                ) {
-                    pointsCurrent += attributesModel.defineAttributesModel(attributes[4].valueAttribute)
-                    attributes[4].valueAt++
-                    pointsCurrent -= attributesModel.defineAttributesModel(attributes[4].valueAttribute)
+                pointsCurrent += attributesModel.defineAttributesModel(attributes[4].valueAttribute)
+                attributes[4].valueAt++
+                pointsCurrent -= attributesModel.defineAttributesModel(attributes[4].valueAttribute)
+                if (pointsCurrent >= 0 ) {
                     points.text = pointsCurrent.toString()
                     valueAttri4.text = attributes[4].valueAttribute.toString()
                 } else {
@@ -403,6 +393,7 @@ class AttributeActivity : ComponentActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         toast.cancel()
                     }, 5000)
+                    attributes[4].valueAt--
                 }
             }
         }
@@ -422,13 +413,10 @@ class AttributeActivity : ComponentActivity() {
                     toast.cancel()
                 }, 5000)
             } else {
-                if ((pointsCurrent + attributesModel.defineAttributesModel(attributes[5].valueAttribute)) - (attributesModel.defineAttributesModel(
-                        attributes[5].valueAttribute + 1
-                    )) >= 0
-                ) {
-                    pointsCurrent += attributesModel.defineAttributesModel(attributes[5].valueAttribute)
-                    attributes[5].valueAt++
-                    pointsCurrent -= attributesModel.defineAttributesModel(attributes[5].valueAttribute)
+                pointsCurrent += attributesModel.defineAttributesModel(attributes[5].valueAttribute)
+                attributes[5].valueAt++
+                pointsCurrent -= attributesModel.defineAttributesModel(attributes[5].valueAttribute)
+                if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri5.text = attributes[5].valueAttribute.toString()
                 } else {
@@ -439,6 +427,7 @@ class AttributeActivity : ComponentActivity() {
                     Handler(Looper.getMainLooper()).postDelayed({
                         toast.cancel()
                     }, 5000)
+                    attributes[5].valueAt--
                 }
             }
         }

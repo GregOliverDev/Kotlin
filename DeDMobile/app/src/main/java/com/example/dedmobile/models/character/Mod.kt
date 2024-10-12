@@ -5,4 +5,8 @@ import java.io.Serializable
 class Mod(
     var nameMod: String,
     var valueMod: Int
-) : Serializable
+) : Serializable{
+    fun copy(): Mod {
+        return Mod(nameMod, valueMod)
+    }
+}
