@@ -1,3 +1,5 @@
 package com.example.dedmobile.models.character
 
-class SpecialFeature(var nameSpecialFeatures: String)
+import java.io.Serializable
+
+class SpecialFeature(var nameSpecialFeatures: String): Serializable

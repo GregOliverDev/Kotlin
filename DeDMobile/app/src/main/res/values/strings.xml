@@ -52,12 +52,17 @@
 
     <!--Choices Activity-->
     <string name="bonus">Bônus de Atributos</string>
-    <string name="race">Raça</string>
-    <string name="sub_race">Sub Raça</string>
-    <string name="classe">Classe</string>
-    <string name="language">Linguagem</string>
-    <string name="live">Vida</string>
+    <string name="race">Raça:</string>
+    <string name="sub_race">Sub Raça:</string>
+    <string name="classe">Classe:</string>
+    <string name="language">Linguagem:</string>
+    <string name="live">Vida:</string>
     <string name="live_value">12</string>
+    <string name="gen">Gênero:</string>
+
+    <string name="name">Nome:</string>
+    <string name="description">Descrição:</string>
+    <string name="age">Idade:</string>
 
     <string-array name="race_options">
         <item>Anão</item>

@@ -98,7 +98,7 @@
                     android:text="@string/attribute"
                     android:textAlignment="center"
                     android:textColor="#ffffff"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     tools:ignore="TextSizeCheck" />
 
                 <TextView
@@ -108,7 +108,7 @@
                     android:text="@string/mod"
                     android:textAlignment="center"
                     android:textColor="#ffffff"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     tools:ignore="TextSizeCheck" />
             </LinearLayout>
 

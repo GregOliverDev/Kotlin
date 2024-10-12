@@ -96,23 +96,23 @@ class AttributeActivity : ComponentActivity() {
         val btAddAttri4: ImageButton = findViewById(R.id.add_attribute_4)
         val btAddAttri5: ImageButton = findViewById(R.id.add_attribute_5)
 
-        Topic.subscribe("valueAttribute") { valueChanged ->
-            var attribute: Attribute
-            for (index in 0..5) {
-                if (attributes[index].nameAttribute == valueChanged) {
-                    attribute = attributes[index]
-                    mods = defineMod.updateMod(mods, attribute, index)
+        fun updateMod(){
+            mods = defineMod.updateMod(mods, attributes[0], 0)
+            mods = defineMod.updateMod(mods, attributes[1], 1)
+            mods = defineMod.updateMod(mods, attributes[2], 2)
+            mods = defineMod.updateMod(mods, attributes[3], 3)
+            mods = defineMod.updateMod(mods, attributes[4], 4)
+            mods = defineMod.updateMod(mods, attributes[5], 5)
 
-                    valueMod0.text = mods[0].valueMod.toString()
-                    valueMod1.text = mods[1].valueMod.toString()
-                    valueMod2.text = mods[2].valueMod.toString()
-                    valueMod3.text = mods[3].valueMod.toString()
-                    valueMod4.text = mods[4].valueMod.toString()
-                    valueMod5.text = mods[5].valueMod.toString()
-
-                }
-            }
+            valueMod0.text = mods[0].valueMod.toString()
+            valueMod1.text = mods[1].valueMod.toString()
+            valueMod2.text = mods[2].valueMod.toString()
+            valueMod3.text = mods[3].valueMod.toString()
+            valueMod4.text = mods[4].valueMod.toString()
+            valueMod5.text = mods[5].valueMod.toString()
         }
+
+        updateMod()
 
         attributes = DefineAttributes().defineAttributes().toList()
 
@@ -133,6 +133,7 @@ class AttributeActivity : ComponentActivity() {
                 pointsCurrent -= attributesModel.defineAttributesModel(attributes[0].valueAttribute)
                 points.text = pointsCurrent.toString()
                 valueAttri0.text = attributes[0].valueAttribute.toString()
+                updateMod()
             }
         }
         btRemAttri1.setOnClickListener {
@@ -152,6 +153,7 @@ class AttributeActivity : ComponentActivity() {
                 pointsCurrent -= attributesModel.defineAttributesModel(attributes[1].valueAttribute)
                 points.text = pointsCurrent.toString()
                 valueAttri1.text = attributes[1].valueAttribute.toString()
+                updateMod()
             }
         }
         btRemAttri2.setOnClickListener {
@@ -171,6 +173,7 @@ class AttributeActivity : ComponentActivity() {
                 pointsCurrent -= attributesModel.defineAttributesModel(attributes[2].valueAttribute)
                 points.text = pointsCurrent.toString()
                 valueAttri2.text = attributes[2].valueAttribute.toString()
+                updateMod()
             }
         }
         btRemAttri3.setOnClickListener {
@@ -190,6 +193,7 @@ class AttributeActivity : ComponentActivity() {
                 pointsCurrent -= attributesModel.defineAttributesModel(attributes[3].valueAttribute)
                 points.text = pointsCurrent.toString()
                 valueAttri3.text = attributes[3].valueAttribute.toString()
+                updateMod()
             }
         }
         btRemAttri4.setOnClickListener {
@@ -209,6 +213,7 @@ class AttributeActivity : ComponentActivity() {
                 pointsCurrent -= attributesModel.defineAttributesModel(attributes[4].valueAttribute)
                 points.text = pointsCurrent.toString()
                 valueAttri4.text = attributes[4].valueAttribute.toString()
+                updateMod()
             }
         }
         btRemAttri5.setOnClickListener {
@@ -228,6 +233,7 @@ class AttributeActivity : ComponentActivity() {
                 pointsCurrent -= attributesModel.defineAttributesModel(attributes[5].valueAttribute)
                 points.text = pointsCurrent.toString()
                 valueAttri5.text = attributes[5].valueAttribute.toString()
+                updateMod()
             }
         }
 
@@ -249,6 +255,7 @@ class AttributeActivity : ComponentActivity() {
                 if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri0.text = attributes[0].valueAttribute.toString()
+                    updateMod()
                 } else {
                     val toast =
                         Toast.makeText(this, "Pontos Insuficientes!!", Toast.LENGTH_SHORT)
@@ -283,6 +290,7 @@ class AttributeActivity : ComponentActivity() {
                 if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri1.text = attributes[1].valueAttribute.toString()
+                    updateMod()
                 } else {
                     val toast =
                         Toast.makeText(this, "Pontos Insuficientes!!", Toast.LENGTH_SHORT)
@@ -317,6 +325,7 @@ class AttributeActivity : ComponentActivity() {
                 if ( pointsCurrent >= 0 ) {
                     points.text = pointsCurrent.toString()
                     valueAttri2.text = attributes[2].valueAttribute.toString()
+                    updateMod()
                 } else {
                     val toast =
                         Toast.makeText(this, "Pontos Insuficientes!!", Toast.LENGTH_SHORT)
@@ -351,6 +360,7 @@ class AttributeActivity : ComponentActivity() {
                 if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri3.text = attributes[3].valueAttribute.toString()
+                    updateMod()
                 } else {
                     val toast =
                         Toast.makeText(this, "Pontos Insuficientes!!", Toast.LENGTH_SHORT)
@@ -385,6 +395,7 @@ class AttributeActivity : ComponentActivity() {
                 if (pointsCurrent >= 0 ) {
                     points.text = pointsCurrent.toString()
                     valueAttri4.text = attributes[4].valueAttribute.toString()
+                    updateMod()
                 } else {
                     val toast =
                         Toast.makeText(this, "Pontos Insuficientes!!", Toast.LENGTH_SHORT)
@@ -419,6 +430,7 @@ class AttributeActivity : ComponentActivity() {
                 if (pointsCurrent >= 0) {
                     points.text = pointsCurrent.toString()
                     valueAttri5.text = attributes[5].valueAttribute.toString()
+                    updateMod()
                 } else {
                     val toast =
                         Toast.makeText(this, "Pontos Insuficientes!!", Toast.LENGTH_SHORT)

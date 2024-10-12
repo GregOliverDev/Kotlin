@@ -6,9 +6,12 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+import androidx.core.view.setPadding
 import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.character.Character
 import com.example.dedmobile.models.character.ClassCharacter
@@ -17,6 +20,7 @@ import com.example.dedmobile.models.character.Level
 import com.example.dedmobile.models.character.Mod
 import com.example.dedmobile.models.character.Race
 import com.example.dedmobile.models.character.SheetDeD
+import com.example.dedmobile.models.character.SpecialFeature
 import com.example.dedmobile.models.character.abilities.DefineAbilities
 import com.example.dedmobile.models.character.attributes.DefineAttributes
 import com.example.dedmobile.models.character.classCharacters.DefineClassCharacter
@@ -67,9 +71,12 @@ class ChoicesActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choices)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        val screen0 : LinearLayout = findViewById(R.id.screen0)
+        val screen1 : LinearLayout = findViewById(R.id.screen1)
+        screen1.visibility = View.GONE
         player = (intent.getSerializableExtra("CURRENT_USER") as? Player)!!
         character = (intent.getSerializableExtra("CURRENT_CHARACTER") as? Character)!!
-        val receivedAttributes = intent.getSerializableExtra("CURRENT_ATTRIBUTES") as? Array<*>
+        val receivedAttributes = intent.getParcelableArrayExtra("CURRENT_ATTRIBUTES") as? Array<*>
         val attributesReturn = receivedAttributes?.filterIsInstance<Attribute>() ?: emptyList()
         val defineMod = DefineMod()
         val language = Language("")
@@ -91,6 +98,7 @@ class ChoicesActivity : ComponentActivity() {
         var iSubRace: IRace = NoSubRace()
         val classCharacter = ClassCharacter("New Instence Class", "No Path")
         var iClassCharacter: IClassCharacter = Barbarian()
+        val specialFeature: List<SpecialFeature> = listOf()
 
         sheetDeD = SheetDeD(
             DefineAbilities().defineAbilities().toList(),
@@ -108,12 +116,11 @@ class ChoicesActivity : ComponentActivity() {
             Level(0, 0),
             defineMod.defineMods(),
             subRace,
-            listOf(),
+            specialFeature,
             0
         )
 
         sheetDeD.attributes = attributes.map { it.copy() }
-        sheetDeD.mods = mods.map { it.copy() }
 
         val live: TextView = findViewById(R.id.live)
 
@@ -149,6 +156,16 @@ class ChoicesActivity : ComponentActivity() {
         }
 
         updateMod()
+
+        val characterImage: ImageView = findViewById(R.id.character_image)
+        val characterImages = arrayOf(
+            R.drawable.character_01,
+            R.drawable.character_02,
+            R.drawable.character_03,
+            R.drawable.character_04
+        )
+
+        characterImage.setImageResource(characterImages[sheetDeD.characterSheet.indexImage])
 
         val valueAttri0: TextView = findViewById(R.id.value_attribute_0)
         val valueAttri1: TextView = findViewById(R.id.value_attribute_1)
@@ -226,6 +243,9 @@ class ChoicesActivity : ComponentActivity() {
                 if (selectedRace == "Humano" || selectedRace == "Meio-Elvo"){
                     languageAdd.visibility = View.VISIBLE
                     textLanguage.visibility = View.VISIBLE
+                }else{
+                    languageAdd.visibility = View.GONE
+                    textLanguage.visibility = View.GONE
                 }
             }
         }
@@ -407,9 +427,66 @@ class ChoicesActivity : ComponentActivity() {
                 }
             }
 
+        fun updateScreen1(){
+
+            val attributes0: TextView = findViewById(R.id.attribute0)
+            val attributes1: TextView = findViewById(R.id.attribute1)
+            val attributes2: TextView = findViewById(R.id.attribute2)
+            val attributes3: TextView = findViewById(R.id.attribute3)
+            val attributes4: TextView = findViewById(R.id.attribute4)
+            val attributes5: TextView = findViewById(R.id.attribute5)
+
+            var text = "Força: " + sheetDeD.attributes[0].valueAttribute.toString()
+            attributes0.text = text
+            text = "Destreza: " + sheetDeD.attributes[1].valueAttribute.toString()
+            attributes1.text = text
+            text = "Constituição: " + sheetDeD.attributes[2].valueAttribute.toString()
+            attributes2.text = text
+            text = "Inteligência: " + sheetDeD.attributes[3].valueAttribute.toString()
+            attributes3.text = text
+            text = "Sabedoria: " + sheetDeD.attributes[4].valueAttribute.toString()
+            attributes4.text = text
+            text = "Carisma: " + sheetDeD.attributes[5].valueAttribute.toString()
+            attributes5.text = text
+
+            val nameCharacter: TextView = findViewById(R.id.name_character)
+            text = sheetDeD.characterSheet.nameCharacter
+            nameCharacter.text = text
+
+            val ageCharacter: TextView = findViewById(R.id.age_character)
+            text = sheetDeD.characterSheet.age.toString()
+            ageCharacter.text = text
+
+            val descriptorCharacter: TextView = findViewById(R.id.description_character)
+            text = sheetDeD.characterSheet.physicalDescription
+            descriptorCharacter.text = text
+
+            val raceCharacter: TextView = findViewById(R.id.race_text)
+            text = sheetDeD.race.nameRace
+            raceCharacter.text = text
+
+            val subRaceCharacter: TextView = findViewById(R.id.sub_race_text)
+            text = sheetDeD.subRace.nameRace
+            subRaceCharacter.text = text
+
+            val classeCharacter: TextView = findViewById(R.id.classe_character_text)
+            text = sheetDeD.classCharacter.nameClassCharacter
+            classeCharacter.text = text
+
+            val liveCharacter: TextView = findViewById(R.id.live_text)
+            text = sheetDeD.hitPoints.toString()
+            liveCharacter.text = text
+
+            val genText : TextView = findViewById(R.id.gen_text)
+            text = sheetDeD.characterSheet.gender
+            genText.text = text
+
+            val border : LinearLayout = findViewById(R.id.border)
+            border.setBackgroundResource(R.drawable.border_with_save)
+        }
+
         val btNext: Button = findViewById(R.id.bt_next)
         btNext.setOnClickListener {
-            sheetDeD.attributes = attributes
             sheetDeD.mods = mods
             val defineRaceCharacter = DefineRaceCharacter(iRace, sheetDeD)
             val defineSubRaceCharacter = DefineRaceCharacter(iSubRace, sheetDeD)
@@ -417,16 +494,17 @@ class ChoicesActivity : ComponentActivity() {
             sheetDeD = defineRaceCharacter.createRace()
             sheetDeD = defineSubRaceCharacter.createRace()
             sheetDeD = defineClassCharacter.createClassCharacter()
+            sheetDeD.hitPoints = live.text.toString().toIntOrNull() ?: 0
+
             if(textLanguage.visibility == View.VISIBLE){
                 val languagesAux = sheetDeD.languages.toMutableList()
                 languagesAux.add(Language(language.nameLanguage))
 
                 sheetDeD.languages = languagesAux.toList()
             }
-            val intent = Intent(this, SaveCharacterActivity::class.java)
-            intent.putExtra("CURRENT_USER", player)
-            intent.putExtra("CURRENT_SHEETDED", sheetDeD)
-            startActivity(intent)
+            screen0.visibility = View.GONE
+            updateScreen1()
+            screen1.visibility = View.VISIBLE
         }
 
         val btBack: Button = findViewById(R.id.bt_back)
