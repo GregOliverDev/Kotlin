@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#34495E">
+
+    <!-- Título da Tela -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Personagem"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Imagem do Avatar -->
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/avatar_image"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de Nome do Personagem -->
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome do personagem"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Campo de Descrição do Personagem -->
+    <EditText
+        android:id="@+id/descricaoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição do personagem"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Campo de Idade do Personagem -->
+    <EditText
+        android:id="@+id/idadeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade do personagem"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Campo de Gênero do Personagem -->
+    <EditText
+        android:id="@+id/generoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gênero do personagem"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Botão "Next" para confirmar o cadastro e seguir para a próxima tela -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/darker_gray" />
+
+</LinearLayout>

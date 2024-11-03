@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#34495E">
+
+    <!-- Campo de Pontos -->
+    <TextView
+        android:id="@+id/pontosTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontos: 27"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Seletor de Raças -->
+    <Spinner
+        android:id="@+id/racaSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:entries="@array/racas_array"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/edit_text" />
+
+    <!-- Exibição de Atributos -->
+    <TextView
+        android:id="@+id/atributosTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atributos do Personagem"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingTop="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Botões de Atributos -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <!-- Força -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Força"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrementForcaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/incrementForcaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/forcaValue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:id="@+id/forcaModifier"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Destreza -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destreza"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrementDestrezaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/incrementDestrezaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/destrezaValue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:id="@+id/destrezaModifier"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Constituição -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constituição"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrementConstituicaoButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/incrementConstituicaoButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/constituicaoValue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:id="@+id/constituicaoModifier"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Inteligência -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inteligência"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrementInteligenciaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/incrementInteligenciaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/inteligenciaValue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:id="@+id/inteligenciaModifier"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Sabedoria -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sabedoria"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrementSabedoriaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/incrementSabedoriaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/sabedoriaValue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:id="@+id/sabedoriaModifier"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Carisma -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carisma"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrementCarismaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/incrementCarismaButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:backgroundTint="#8e44ad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/carismaValue"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:id="@+id/carismaModifier"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/circle_background" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Exibição da Vida -->
+    <TextView
+        android:id="@+id/vidaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vida: 10"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <!-- Botões de navegação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Botão Back -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#A020F0" />
+
+        <!-- Espaço entre os botões -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Botão Next -->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#A020F0" />
+    </LinearLayout>
+</LinearLayout>

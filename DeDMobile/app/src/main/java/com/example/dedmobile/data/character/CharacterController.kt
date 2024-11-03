@@ -1,0 +1,4 @@
+package com.example.dedmobile.data.character
+
+class CharacterController {
+}

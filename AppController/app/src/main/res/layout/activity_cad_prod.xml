@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/login_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/menu_cad_prod"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/find"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <EditText
+            android:id="@+id/cod"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/text_input"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:hint="@string/cod"
+            android:textColor="@color/gray"
+            tools:ignore="Autofill,LabelFor,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/find"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/button_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/find_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/data_prod"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/text_input"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:hint="@string/name"
+            android:textColor="@color/gray"
+            tools:ignore="Autofill,LabelFor,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/text_input"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:hint="@string/price"
+            android:textColor="@color/gray"
+            tools:ignore="Autofill,LabelFor,TextContrastCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="50dp">
+
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_enter"/>
+
+        <Button
+            android:id="@+id/bt_del"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="@string/del"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_cancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

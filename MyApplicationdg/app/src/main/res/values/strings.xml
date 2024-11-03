@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application dg</string>
+
+    <!-- Adicionando as raças disponíveis -->
+    <string-array name="racas_array">
+        <item>Anão</item>
+        <item>Elfo</item>
+        <item>Draconato</item>
+        <item>Gnomo</item>
+        <item>Halfling</item>
+        <item>Humano</item>
+        <item>Meio-Elfo</item>
+        <item>Meio-Orc</item>
+        <item>Tiefling</item>
+    </string-array>
+</resources>
