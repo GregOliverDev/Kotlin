@@ -3,6 +3,7 @@ package com.example.dedmobile.data.character
 import android.content.ContentValues
 import android.content.Context
 import com.example.dedmobile.data.Database
+import com.example.dedmobile.data.players.PlayerController
 import com.example.dedmobile.models.character.Ability
 import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.character.ClassCharacter
@@ -22,6 +23,7 @@ class SheetDeDController(context: Context) {
     private lateinit var languageController: LanguageController
     private lateinit var modController: ModController
     private lateinit var specialFeatureController: SpecialFeatureController
+    private lateinit var playerController: PlayerController
 
     fun insertSheet(sheetDeD: SheetDeD, idCharacter: Int): Long {
         val db = databaseHelper.writableDatabase
@@ -161,5 +163,19 @@ class SheetDeDController(context: Context) {
         db.close()
 
         return maxId
+    }
+
+    fun deleteSheet(sheetDeD: SheetDeD) {
+        val db = databaseHelper.writableDatabase
+        val whereClause = "id = ?"
+        val whereArgs = arrayOf(sheetDeD.id.toString())
+
+        db.delete("sheets", whereClause, whereArgs)
+
+        attributeController.deleteAttribute(sheetDeD.id)
+        characterController.deleteCharacter(sheetDeD.characterSheet.id)
+        languageController.deleteLanguages(sheetDeD.id)
+        modController.deleteMods(sheetDeD.id)
+        specialFeatureController.deleteSpecialFeatures(sheetDeD.id)
     }
 }

@@ -65,4 +65,13 @@ class ModController(context: Context) {
             )
         }
     }
+
+    fun deleteMods(idSheetDeD: Int) {
+        val db = databaseHelper.writableDatabase
+        val whereClause = "idSheetDeD = ?"
+        val whereArgs = arrayOf(idSheetDeD.toString())
+
+        db.delete("mods", whereClause, whereArgs)
+    }
+
 }

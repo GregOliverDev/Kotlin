@@ -65,4 +65,13 @@ class CharacterController(context: Context) {
 
         return maxId
     }
+
+    fun deleteCharacter(id: Int) {
+        val db = databaseHelper.writableDatabase
+        val whereClause = "id = ?"
+        val whereArgs = arrayOf(id.toString())
+
+        db.delete("characters", whereClause, whereArgs)
+    }
+
 }

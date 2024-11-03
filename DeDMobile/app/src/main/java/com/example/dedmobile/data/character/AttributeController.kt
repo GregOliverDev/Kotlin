@@ -52,4 +52,12 @@ class AttributeController(context: Context) {
 
         db.update("attributes", values, whereClause, whereArgs)
     }
+
+    fun deleteAttribute(idSheetDeD: Int) {
+        val db = databaseHelper.writableDatabase
+        val whereClause = "idSheetDeD = ?"
+        val whereArgs = arrayOf(idSheetDeD.toString())
+
+        db.delete("attributes", whereClause, whereArgs)
+    }
 }

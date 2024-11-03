@@ -48,4 +48,12 @@ class SpecialFeatureController(context: Context) {
         cursor.close()
         return specialFeatures
     }
+
+    fun deleteSpecialFeatures(idSheetDeD: Int) {
+        val db = databaseHelper.writableDatabase
+        val whereClause = "idSheetDeD = ?"
+        val whereArgs = arrayOf(idSheetDeD.toString())
+
+        db.delete("specialFeatures", whereClause, whereArgs)
+    }
 }

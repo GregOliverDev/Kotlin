@@ -1,5 +1,7 @@
 package com.example.dedmobile
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -11,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.dedmobile.data.character.SheetDeDController
+import com.example.dedmobile.data.players.PlayerController
 import com.example.dedmobile.models.character.SheetDeD
 import com.example.dedmobile.models.character.levels.DefineLive
 import com.example.dedmobile.models.player.Player
@@ -18,9 +21,11 @@ import com.example.dedmobile.models.player.Player
 class ContinueActivity : ComponentActivity() {
     private lateinit var player: Player
     private lateinit var sheetDeDController: SheetDeDController
+    private lateinit var playerController: PlayerController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         sheetDeDController = SheetDeDController(this)
+        playerController = PlayerController(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_continue)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -95,6 +100,31 @@ class ContinueActivity : ComponentActivity() {
                         toast.cancel()
                     }, 5000)
                 }
+            }
+        }
+
+        val btDel: Button = findViewById(R.id.bt_del)
+        btDel.setOnClickListener {
+            if (sheetDeD != null) {
+                sheetDeDController.deleteSheet(sheetDeD)
+                playerController.updatePlayer(player.id, 0)
+
+                fun restartApp(context: Context) {
+                    val intent = context.packageManager.getLaunchIntentForPackage(context.packageName)
+                    intent?.apply {
+                        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    }
+                    context.startActivity(intent)
+                    Runtime.getRuntime().exit(0)
+                }
+                val toast = Toast.makeText(this, "Fixa Excluida com Sucesso", Toast.LENGTH_SHORT)
+                toast.show()
+
+                Handler(Looper.getMainLooper()).postDelayed({
+                    toast.cancel()
+                }, 5000)
+                restartApp(this)
             }
         }
     }

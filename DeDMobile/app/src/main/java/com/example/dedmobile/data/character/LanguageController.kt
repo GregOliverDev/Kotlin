@@ -46,4 +46,13 @@ class LanguageController(context: Context) {
         cursor.close()
         return languages
     }
+
+    fun deleteLanguages(idSheetDeD: Int) {
+        val db = databaseHelper.writableDatabase
+        val whereClause = "idSheetDeD = ?"
+        val whereArgs = arrayOf(idSheetDeD.toString())
+
+        db.delete("languages", whereClause, whereArgs)
+    }
+
 }

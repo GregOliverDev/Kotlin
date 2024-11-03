@@ -128,4 +128,5 @@
     <!--Activity Continue-->
     <string name="level">Level:</string>
     <string name="bt_traning">Treinar</string>
+    <string name="bt_del">Excluir</string>
 </resources>
