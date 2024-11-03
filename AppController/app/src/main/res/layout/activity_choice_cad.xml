@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/login_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/choice_cad"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_cad_prod"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_cad_prod"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_enter"/>
+        <Button
+            android:id="@+id/bt_cad_serv"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_cad_serv"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_enter"/>
+
+    </LinearLayout>
 
 </LinearLayout>

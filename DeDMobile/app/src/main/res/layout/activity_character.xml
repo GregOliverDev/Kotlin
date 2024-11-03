@@ -71,8 +71,7 @@
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/text_input"
                 android:hint="@string/age_character"
-                android:inputType="number"
-                tools:ignore="Autofill" />
+                android:inputType="number" />
         </LinearLayout>
 
     </LinearLayout>

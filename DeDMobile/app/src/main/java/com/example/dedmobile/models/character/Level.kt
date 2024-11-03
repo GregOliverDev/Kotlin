@@ -10,4 +10,8 @@ class Level(private var level: Int, private var xp: Int): Serializable {
             this.level = value
             Topic.notify("alterLevel", this.level)
         }
+
+    fun getLevel(): Int{
+        return this.level
+    }
 }

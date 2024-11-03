@@ -1,4 +1,7 @@
 package com.example.appcontroller.models
 
-class Services {
-}
+import java.io.Serializable
+
+class Service(
+    var id: Int, var name: String, var price: Double
+) : Serializable

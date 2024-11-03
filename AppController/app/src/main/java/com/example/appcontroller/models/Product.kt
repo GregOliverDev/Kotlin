@@ -1,4 +1,40 @@
 package com.example.appcontroller.models
 
-class product {
+import android.annotation.SuppressLint
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.example.appcontroller.R
+import java.io.Serializable
+
+class Product(
+    var id: Int, var name: String, var price: Double
+) : Serializable
+
+class ProductAdapter(private val products: List<Product>) : RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.product, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(products[position])
+    }
+
+    override fun getItemCount(): Int = products.size
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val codTextView: TextView = itemView.findViewById(R.id.cod)
+        private val nameTextView: TextView = itemView.findViewById(R.id.name)
+        private val priceTextView: TextView = itemView.findViewById(R.id.price)
+        @SuppressLint("SetTextI18n")
+        fun bind(product: Product) {
+            codTextView.text = "Código: ${product.id}"
+            nameTextView.text = "Nome: ${ product.name}"
+            priceTextView.text = "Preço: R$ ${product.price}"
+        }
+    }
 }

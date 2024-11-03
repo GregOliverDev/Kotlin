@@ -114,7 +114,9 @@ class CharacterActivity : ComponentActivity() {
 
         nameCharacter.setText(character.nameCharacter)
         physicalDescription.setText(character.physicalDescription)
-        age.setText(character.age.toString())
+        if (character.age.toString().toIntOrNull() != 0){
+            age.setText(character.age.toString())
+        }
         val position = adapter.getPosition(character.gender)
         genderSpinner.setSelection(position)
         characterImage.setImageResource(characterImages[indexImage])

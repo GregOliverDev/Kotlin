@@ -1,9 +1,5 @@
 package com.example.dedmobile.models.character
 
-import com.example.dedmobile.models.character.Mod
-import com.example.dedmobile.models.character.abilities.DefineAbilities
-import com.example.dedmobile.models.character.attributes.DefineAttributes
-import com.example.dedmobile.models.character.modifiers.DefineMod
 import com.example.dedmobile.models.dice.Dice
 import java.io.Serializable
 

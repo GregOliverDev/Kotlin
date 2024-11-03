@@ -1,4 +1,7 @@
 package com.example.appcontroller.models
 
-class User {
-}
+import java.io.Serializable
+
+class User(
+    var id: Int, var name: String, var password: String
+) : Serializable

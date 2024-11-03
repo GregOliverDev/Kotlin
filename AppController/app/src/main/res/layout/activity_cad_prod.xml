@@ -50,9 +50,8 @@
             android:hint="@string/cod"
             android:textColor="@color/gray"
             tools:ignore="Autofill,LabelFor,TextContrastCheck,TouchTargetSizeCheck" />
-
         <ImageButton
-            android:id="@+id/find"
+            android:id="@+id/bt_find"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginEnd="35dp"
@@ -64,6 +63,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/frame1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -71,6 +71,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text_data"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="sans-serif-condensed"
@@ -92,7 +93,6 @@
             android:hint="@string/name"
             android:textColor="@color/gray"
             tools:ignore="Autofill,LabelFor,TextContrastCheck,TouchTargetSizeCheck" />
-
         <EditText
             android:id="@+id/price"
             android:layout_width="match_parent"
@@ -108,12 +108,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/frame2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingVertical="50dp">
-
 
         <Button
             android:id="@+id/bt_save"
@@ -124,7 +124,6 @@
             android:layout_marginBottom="30dp"
             android:textColor="@color/white"
             android:background="@drawable/bt_enter"/>
-
         <Button
             android:id="@+id/bt_del"
             android:layout_width="315dp"
@@ -134,7 +133,32 @@
             android:layout_marginBottom="30dp"
             android:textColor="@color/white"
             android:background="@drawable/bt_cancel"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/frame3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="355dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" />
+        
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back_cad"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_cancel"/>
     </LinearLayout>
 
 </LinearLayout>

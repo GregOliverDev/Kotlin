@@ -3,16 +3,15 @@
     android:id="@+id/custom_toast_container"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#2196F3"
-    android:padding="10dp"
-    android:orientation="horizontal">
+    android:background="@drawable/toast_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="12dp">
 
     <TextView
-    android:id="@+id/toast_text"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Custom Toast"
-    android:textColor="#FFFFFF"
-    android:textSize="20sp" />
-
+        android:id="@+id/toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 </LinearLayout>

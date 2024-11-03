@@ -11,7 +11,14 @@ import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.core.view.setPadding
+import com.example.dedmobile.data.character.AbilityController
+import com.example.dedmobile.data.character.AttributeController
+import com.example.dedmobile.data.character.CharacterController
+import com.example.dedmobile.data.character.LanguageController
+import com.example.dedmobile.data.character.ModController
+import com.example.dedmobile.data.character.SheetDeDController
+import com.example.dedmobile.data.character.SpecialFeatureController
+import com.example.dedmobile.data.players.PlayerController
 import com.example.dedmobile.models.character.Attribute
 import com.example.dedmobile.models.character.Character
 import com.example.dedmobile.models.character.ClassCharacter
@@ -21,7 +28,6 @@ import com.example.dedmobile.models.character.Mod
 import com.example.dedmobile.models.character.Race
 import com.example.dedmobile.models.character.SheetDeD
 import com.example.dedmobile.models.character.SpecialFeature
-import com.example.dedmobile.models.character.abilities.DefineAbilities
 import com.example.dedmobile.models.character.attributes.DefineAttributes
 import com.example.dedmobile.models.character.classCharacters.DefineClassCharacter
 import com.example.dedmobile.models.character.classCharacters.IClassCharacter
@@ -67,12 +73,30 @@ class ChoicesActivity : ComponentActivity() {
     private lateinit var mods: List<Mod>
     private lateinit var sheetDeD: SheetDeD
 
+    private lateinit var abilityController: AbilityController
+    private lateinit var attributeController: AttributeController
+    private lateinit var playerController: PlayerController
+    private lateinit var sheetDeDController: SheetDeDController
+    private lateinit var characterController: CharacterController
+    private lateinit var languageController: LanguageController
+    private lateinit var modController: ModController
+    private lateinit var specialFeatureController: SpecialFeatureController
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        abilityController = AbilityController(this)
+        playerController = PlayerController(this)
+        sheetDeDController = SheetDeDController(this)
+        attributeController = AttributeController(this)
+        characterController = CharacterController(this)
+        languageController = LanguageController(this)
+        modController = ModController(this)
+        specialFeatureController = SpecialFeatureController(this)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choices)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        val screen0 : LinearLayout = findViewById(R.id.screen0)
-        val screen1 : LinearLayout = findViewById(R.id.screen1)
+        val screen0: LinearLayout = findViewById(R.id.screen0)
+        val screen1: LinearLayout = findViewById(R.id.screen1)
         screen1.visibility = View.GONE
         player = (intent.getSerializableExtra("CURRENT_USER") as? Player)!!
         character = (intent.getSerializableExtra("CURRENT_CHARACTER") as? Character)!!
@@ -101,7 +125,7 @@ class ChoicesActivity : ComponentActivity() {
         val specialFeature: List<SpecialFeature> = listOf()
 
         sheetDeD = SheetDeD(
-            DefineAbilities().defineAbilities().toList(),
+            abilityController.getAbilities(),
             DefineAttributes().defineAttributes().toList(),
             0,
             race,
@@ -124,7 +148,7 @@ class ChoicesActivity : ComponentActivity() {
 
         val live: TextView = findViewById(R.id.live)
 
-        fun updateTextLive(){
+        fun updateTextLive() {
             val calcLive = 12 + mods[2].valueMod
             live.text = calcLive.toString()
         }
@@ -138,7 +162,7 @@ class ChoicesActivity : ComponentActivity() {
         val valueMod4: TextView = findViewById(R.id.value_mod_4)
         val valueMod5: TextView = findViewById(R.id.value_mod_5)
 
-        fun updateMod(){
+        fun updateMod() {
             mods = defineMod.updateMod(mods, attributes[0], 0)
             mods = defineMod.updateMod(mods, attributes[1], 1)
             mods = defineMod.updateMod(mods, attributes[2], 2)
@@ -240,10 +264,10 @@ class ChoicesActivity : ComponentActivity() {
                 subRaceSpinner.visibility = View.GONE
                 textSubRace.visibility = View.GONE
                 iSubRace = NoSubRace()
-                if (selectedRace == "Humano" || selectedRace == "Meio-Elvo"){
+                if (selectedRace == "Humano" || selectedRace == "Meio-Elvo") {
                     languageAdd.visibility = View.VISIBLE
                     textLanguage.visibility = View.VISIBLE
-                }else{
+                } else {
                     languageAdd.visibility = View.GONE
                     textLanguage.visibility = View.GONE
                 }
@@ -292,57 +316,67 @@ class ChoicesActivity : ComponentActivity() {
 
         fun selectSubRace(selectedSubRace: String) {
             attributes = sheetDeD.attributes.map { it.copy() }
-             when (selectedSubRace) {
+            when (selectedSubRace) {
                 "Anão da Colina" -> {
                     iSubRace = HillDwarf()
-                    attributes[2].valueAt +=2
-                    attributes[4].valueAt +=1
+                    attributes[2].valueAt += 2
+                    attributes[4].valueAt += 1
                 }
+
                 "Anão da Montanha" -> {
                     iSubRace = MountainDwarf()
-                    attributes[0].valueAt +=2
-                    attributes[2].valueAt +=2
+                    attributes[0].valueAt += 2
+                    attributes[2].valueAt += 2
                 }
+
                 "Elfo das Trevas" -> {
                     iSubRace = Drow()
-                    attributes[1].valueAt +=2
-                    attributes[5].valueAt +=1
+                    attributes[1].valueAt += 2
+                    attributes[5].valueAt += 1
                 }
+
                 "Alto Elfo" -> {
                     iSubRace = HighElf()
-                    attributes[1].valueAt +=2
-                    attributes[3].valueAt +=1
+                    attributes[1].valueAt += 2
+                    attributes[3].valueAt += 1
                 }
+
                 "Elfo da Lua" -> {
                     iSubRace = MoonElf()
-                    attributes[1].valueAt +=2
-                    attributes[5].valueAt +=1
+                    attributes[1].valueAt += 2
+                    attributes[5].valueAt += 1
                 }
+
                 "Elfo da Floresta" -> {
                     iSubRace = WoodElf()
-                    attributes[1].valueAt +=2
-                    attributes[4].valueAt +=1
+                    attributes[1].valueAt += 2
+                    attributes[4].valueAt += 1
                 }
+
                 "Gnomo da Floresta" -> {
                     iSubRace = ForestGnome()
-                    attributes[3].valueAt +=2
-                    attributes[1].valueAt +=1
+                    attributes[3].valueAt += 2
+                    attributes[1].valueAt += 1
                 }
+
                 "Gnomo da Rocha" -> {
                     iSubRace = RockGnome()
-                    attributes[3].valueAt +=2
-                    attributes[2].valueAt +=1
+                    attributes[3].valueAt += 2
+                    attributes[2].valueAt += 1
                 }
+
                 "Halfling Robusto" -> {
                     iSubRace = StoutHalfling()
-                    attributes[1].valueAt +=2
-                    attributes[2].valueAt +=1
+                    attributes[1].valueAt += 2
+                    attributes[2].valueAt += 1
                 }
+
                 "Halfling Pés-Leves" -> {
                     iSubRace = LightfootHalfling()
-                    attributes[1].valueAt +=2
-                    attributes[5].valueAt +=1
+                    attributes[1].valueAt += 2
+                    attributes[5].valueAt += 1
                 }
+
                 else -> iSubRace = NoSubRace()
             }
             updateTextAttribute()
@@ -364,7 +398,7 @@ class ChoicesActivity : ComponentActivity() {
             }
         }
 
-        languageAdd.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+        languageAdd.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>,
                 view: View?,
@@ -427,7 +461,7 @@ class ChoicesActivity : ComponentActivity() {
                 }
             }
 
-        fun updateScreen1(){
+        fun updateScreen1() {
 
             val attributes0: TextView = findViewById(R.id.attribute0)
             val attributes1: TextView = findViewById(R.id.attribute1)
@@ -477,12 +511,24 @@ class ChoicesActivity : ComponentActivity() {
             text = sheetDeD.hitPoints.toString()
             liveCharacter.text = text
 
-            val genText : TextView = findViewById(R.id.gen_text)
+            val genText: TextView = findViewById(R.id.gen_text)
             text = sheetDeD.characterSheet.gender
             genText.text = text
 
-            val border : LinearLayout = findViewById(R.id.border)
+            val border: LinearLayout = findViewById(R.id.border)
             border.setBackgroundResource(R.drawable.border_with_save)
+
+            val languages: TextView = findViewById(R.id.languages_text)
+            val languageNames = StringBuilder()
+
+            for (languageAux in sheetDeD.languages) {
+                if (languageNames.isNotEmpty()) {
+                    languageNames.append("\n")
+                }
+                languageNames.append(languageAux.nameLanguage)
+            }
+
+            languages.text = languageNames.toString()
         }
 
         val btNext: Button = findViewById(R.id.bt_next)
@@ -496,7 +542,7 @@ class ChoicesActivity : ComponentActivity() {
             sheetDeD = defineClassCharacter.createClassCharacter()
             sheetDeD.hitPoints = live.text.toString().toIntOrNull() ?: 0
 
-            if(textLanguage.visibility == View.VISIBLE){
+            if (textLanguage.visibility == View.VISIBLE) {
                 val languagesAux = sheetDeD.languages.toMutableList()
                 languagesAux.add(Language(language.nameLanguage))
 
@@ -512,6 +558,35 @@ class ChoicesActivity : ComponentActivity() {
             val intent = Intent(this, AttributeActivity::class.java)
             intent.putExtra("CURRENT_USER", player)
             intent.putExtra("CURRENT_CHARACTER", character)
+            startActivity(intent)
+        }
+
+        val btSave: Button = findViewById(R.id.bt_save)
+        btSave.setOnClickListener {
+            characterController.insertCharacter(sheetDeD.characterSheet)
+
+            characterController.getMaxId()
+                ?.let {it1 -> sheetDeDController.insertSheet(sheetDeD, it1)}
+
+            sheetDeDController.getMaxId()
+                ?.let { it1 -> specialFeatureController.insertSpecialFeatures(sheetDeD.specialFeatures, it1) }
+
+            sheetDeDController.getMaxId()
+                ?.let { it1 -> modController.insertMod(sheetDeD.mods, it1) }
+
+            sheetDeDController.getMaxId()
+                ?.let { it1 -> languageController.insertLanguage(sheetDeD.languages, it1) }
+
+            sheetDeDController.getMaxId()
+                ?.let { it1 -> attributeController.insertAttribute(sheetDeD.attributes, it1) }
+
+            sheetDeDController.getMaxId()
+                ?.let { it1 -> playerController.updatePlayer(player.id, it1) }
+
+            player = playerController.getPlayer(player.namePlayer, player.password)!!
+
+            val intent = Intent(this, ContinueActivity::class.java)
+            intent.putExtra("CURRENT_USER", player)
             startActivity(intent)
         }
     }

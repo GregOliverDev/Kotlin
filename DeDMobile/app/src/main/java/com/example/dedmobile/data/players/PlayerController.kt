@@ -28,6 +28,7 @@ class PlayerController(context: Context) {
         }
 
         val contentValues = ContentValues().apply {
+            put("idSheet", 0)
             put("namePlayer", namePlayer)
             put("password", password)
         }
@@ -46,30 +47,23 @@ class PlayerController(context: Context) {
             val id = cursor.getInt(cursor.getColumnIndexOrThrow("id"))
             val name = cursor.getString(cursor.getColumnIndexOrThrow("namePlayer"))
             val pass = cursor.getString(cursor.getColumnIndexOrThrow("password"))
+            val idSheetDeD = cursor.getInt(cursor.getColumnIndexOrThrow("idSheet"))
 
-            Player(id = id, namePlayer = name, password = pass)
+            Player(idSheetDeD, id = id, namePlayer = name, password = pass)
         } else {
             null
         }.also {
             cursor.close()
         }
     }
-    /*
-        fun updatePlayer(id: Int, namePlayer: String, password: String): Boolean {
-            val db = databaseHelper.writableDatabase
-            val contentValues = ContentValues().apply {
-                put("password", password)
-            }
 
-            val result = db.update("players", contentValues, "id = ?", arrayOf(id.toString()))
-            db.close()
-            return result > 0
+    fun updatePlayer(id: Int, idSheetDeD: Int) {
+        val db = databaseHelper.writableDatabase
+        val contentValues = ContentValues().apply {
+            put("idSheet", idSheetDeD)
         }
 
-        fun deletePlayer(id: Int): Boolean {
-            val db = databaseHelper.writableDatabase
-            val result = db.delete("players", "id = ?", arrayOf(id.toString()))
-            db.close()
-            return result > 0
-        }*/
+        db.update("players", contentValues, "id = ?", arrayOf(id.toString()))
+        db.close()
+    }
 }

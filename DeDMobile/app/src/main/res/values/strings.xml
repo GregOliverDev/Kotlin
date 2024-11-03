@@ -57,8 +57,10 @@
     <string name="classe">Classe:</string>
     <string name="language">Linguagem:</string>
     <string name="live">Vida:</string>
+    <string name="languages">Linguagens:</string>
     <string name="live_value">12</string>
     <string name="gen">Gênero:</string>
+    <string name="bt_save">Salvar</string>
 
     <string name="name">Nome:</string>
     <string name="description">Descrição:</string>
@@ -123,5 +125,7 @@
         <item>Halfling</item>
     </string-array>
 
-
+    <!--Activity Continue-->
+    <string name="level">Level:</string>
+    <string name="bt_traning">Treinar</string>
 </resources>

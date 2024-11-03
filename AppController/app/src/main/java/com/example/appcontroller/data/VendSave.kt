@@ -6,7 +6,8 @@ import com.example.appcontroller.models.Vend
 
 class VendSave(context: Context) {
     private val databaseHelper = Database(context)
-    fun insertVend(idUser: Int, nameClient: String, dateVend: Date, priceFinal: Double): Boolean {
+    fun insertVend(idUser: Int, nameClient: String, dateVend: String, priceFinal: Double): Boolean {
+        val db = databaseHelper.readableDatabase
         if (nameClient.isBlank()) {
             return false
         }
@@ -33,11 +34,19 @@ class VendSave(context: Context) {
             do {
                 val id = cursor.getInt(cursor.getColumnIndexOrThrow("id"))
                 val idUser = cursor.getInt(cursor.getColumnIndexOrThrow("idUser"))
-                val name = cursor.getString(cursor.getColumnIndexOrThrow("nameClient"))
+                val nameClient = cursor.getString(cursor.getColumnIndexOrThrow("nameClient"))
                 val dateVend = cursor.getString(cursor.getColumnIndexOrThrow("dateVend"))
-                val price = cursor.getDouble(cursor.getColumnIndexOrThrow("priceFinal"))
+                val priceFinal = cursor.getDouble(cursor.getColumnIndexOrThrow("priceFinal"))
 
-                services.add(Service(id = id, idUser = idUser , nameClient = nameClient, dateVend = dateVend, priceFinal = priceFinal))
+                vends.add(
+                    Vend(
+                        id = id,
+                        idUser = idUser,
+                        nameClient = nameClient,
+                        dateVend = dateVend,
+                        priceFinal = priceFinal
+                    )
+                )
             } while (cursor.moveToNext())
         }
 

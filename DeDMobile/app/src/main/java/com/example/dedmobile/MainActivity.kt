@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import com.example.dedmobile.data.character.SpecialFeatureController
 import com.example.dedmobile.data.players.PlayerController
 import com.example.dedmobile.models.character.Character
 import com.example.dedmobile.models.player.Player
@@ -18,9 +19,11 @@ class MainActivity : ComponentActivity() {
     private lateinit var player: Player
     private lateinit var character: Character
     private lateinit var playerController: PlayerController
+    private lateinit var specialFeatureController: SpecialFeatureController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         playerController = PlayerController(this)
+        specialFeatureController = SpecialFeatureController(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -54,11 +57,17 @@ class MainActivity : ComponentActivity() {
                 }, 5000)
             } else {
                 player = findPlayer
-                character = Character(0, "Masculino", 0, "", "")
-                val intent = Intent(this, CharacterActivity::class.java)
-                intent.putExtra("CURRENT_USER", player)
-                intent.putExtra("CURRENT_CHARACTER", character)
-                startActivity(intent)
+                if(player.idSheetDeD == 0){
+                    character = Character(0,0, "Masculino", 0, "", "")
+                    val intent = Intent(this, CharacterActivity::class.java)
+                    intent.putExtra("CURRENT_USER", player)
+                    intent.putExtra("CURRENT_CHARACTER", character)
+                    startActivity(intent)
+                }else{
+                    val intent = Intent(this, ContinueActivity::class.java)
+                    intent.putExtra("CURRENT_USER", player)
+                    startActivity(intent)
+                }
             }
         }
     }

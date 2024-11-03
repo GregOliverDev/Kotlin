@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Controle</string>
+
+    <!--Login Activity-->
+    <string name="login">Login</string>
+    <string name="user">Usuário</string>
+    <string name="pass">Senha</string>
+    <string name="enter">Entrar</string>
+
+    <!--Menu Activity-->
+    <string name="menu">Menu</string>
+    <string name="vend">Venda</string>
+    <string name="cad">Cadastro</string>
+    <string name="stock">Estoque</string>
+    <string name="relat">Relatório</string>
+
+    <!--Vend Activity-->
+    <string name="menu_vend">Nova Venda</string>
+    <string name="price_vend">Valor: </string>
+    <string name="price_final">Valor Final: </string>
+    <string name="discount">Desconto: </string>
+    <string name="quant_itens">Quant. Produtos: </string>
+    <string name="quant_serv">Quant. Serviços: </string>
+    <string name="value_default_float">0,00</string>
+    <string name="value_default_int">0</string>
+    <string name="save_vend">Finalizar</string>
+    <string name="back_vend">Voltar</string>
+    <string name="item">item</string>
+    <string name="add">Adicionar item</string>
+    <string name="name_item">Nome do Produto</string>
+    <string name="quant_item">Quantidade: 0</string>
+    <string name="price_item">Valor: R$ 0.00</string>
+    <string name="discount_item">Desconto: R$ 0.00</string>
+
+    <!--Cad Activity-->
+    <string name="menu_cad_prod">Cadastro de Produto</string>
+    <string name="menu_cad_serv">Cadastro de Serviço</string>
+    <string name="data_prod">Dados do Produto</string>
+    <string name="data_serv">Dados do Seviço</string>
+    <string name="cod">Código</string>
+    <string name="find">Pesquise ou insira 0 para um novo</string>
+    <string name="save">Gravar</string>
+    <string name="del">Excluir</string>
+    <string name="name">Nome</string>
+    <string name="price">Preço</string>
+    <string name="choice_cad">Escolha um tipo de cadastro</string>
+    <string name="name_item_cad">Nome: </string>
+    <string name="price_item_cad">Preço: </string>
+    <string name="cod_item_cad">Código: </string>
+    <string name="back_cad">Voltar</string>
+
+
+    <!--Relat Activity-->
+    <string name="menu_relat">Relatórios</string>
+    <string name="choice_relat">Escolha um relatório</string>
+    <string name="relat_vend">Vendas</string>
+    <string name="relat_stock">Estoque</string>
+    <string name="relat_statistic">Estatísticas</string>
+</resources>

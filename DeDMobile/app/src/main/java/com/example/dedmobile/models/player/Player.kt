@@ -4,7 +4,7 @@ import com.example.dedmobile.models.character.SheetDeD
 import java.io.Serializable
 
 class Player(
-    var characterSheet: List<SheetDeD>? = null,
+    var idSheetDeD: Int,
     var id: Int,
     var namePlayer: String,
     var password: String

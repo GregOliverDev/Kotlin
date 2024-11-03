@@ -7,7 +7,7 @@ import com.example.dedmobile.models.dice.D6
 import com.example.dedmobile.models.dice.D8
 
 class DefineLive {
-    fun updateLive(sheetDeD: SheetDeD, valueChanged: Int) {
+    fun updateLive(sheetDeD: SheetDeD, valueChanged: Int): Int {
         if (valueChanged in 1..20) {
             val additionalHitPoints = when (sheetDeD.diceLive.type) {
                 "1d6" -> D6().getRandomValue()
@@ -16,7 +16,8 @@ class DefineLive {
                 "1d12" -> D12().getRandomValue()
                 else -> 0
             }
-            sheetDeD.hitPoints += additionalHitPoints
+            return additionalHitPoints
         }
+        return 0
     }
 }

@@ -12,7 +12,7 @@ class StockSave(context: Context) {
             "stock",
             arrayOf("idProduct"),
             "idProduct = ?",
-            arrayOf(idProduct),
+            arrayOf(idProduct.toString()),
             null, null, null
         )
 

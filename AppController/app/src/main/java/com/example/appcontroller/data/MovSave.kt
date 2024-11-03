@@ -76,5 +76,4 @@ class MovSave(context: Context) {
         db.close()
         return rowsAffected > 0
     }
-
 }
